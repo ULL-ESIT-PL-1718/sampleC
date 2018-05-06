@@ -1,0 +1,24 @@
+
+- Subrutina comprobar tipo parametros		  (V)
+	- Comprobar el orden de los parametros    (V)
+- Delegar codigo a la asignacion		  (R)
+- Hay que crear una subrutina recursiva para 
+  resolver las operaciones encadenadas
+- Arrays
+- Variables globales				  
+- Arreglar los .local  				  (V)
+- Cuando ponga main añadir la coletilla :main     (V)
+- Incluir un nuevo parametro en las operaciones   (V)
+
+
+
+
+- Test						  (H)
+
+
+
+
+Info
+- store_global "$foo", P10
+
+- find_global P0, "$foo"

@@ -1,0 +1,3175 @@
+Warnings:
+---------
+1 shift/reduce conflict
+
+Conflicts:
+----------
+Conflict in state 146 between rule 59 and token 'ELSE' resolved as shift.
+Conflict in state 153 between rule 91 and token '-' resolved as reduce.
+Conflict in state 153 between rule 91 and token '<' resolved as reduce.
+Conflict in state 153 between rule 91 and token '+' resolved as reduce.
+Conflict in state 153 between rule 91 and token '**' resolved as shift.
+Conflict in state 153 between rule 91 and token '%' resolved as shift.
+Conflict in state 153 between rule 91 and token '==' resolved as reduce.
+Conflict in state 153 between rule 91 and token '>=' resolved as reduce.
+Conflict in state 153 between rule 91 and token '*' resolved as shift.
+Conflict in state 153 between rule 91 and token '!=' resolved as reduce.
+Conflict in state 153 between rule 91 and token '&' resolved as reduce.
+Conflict in state 153 between rule 91 and token '/' resolved as shift.
+Conflict in state 153 between rule 91 and token '=' resolved as reduce.
+Conflict in state 153 between rule 91 and token '|' resolved as reduce.
+Conflict in state 153 between rule 91 and token '<=' resolved as reduce.
+Conflict in state 153 between rule 91 and token '>' resolved as reduce.
+Conflict in state 154 between rule 95 and token '-' resolved as shift.
+Conflict in state 154 between rule 95 and token '<' resolved as reduce.
+Conflict in state 154 between rule 95 and token '+' resolved as shift.
+Conflict in state 154 between rule 95 and token '**' resolved as shift.
+Conflict in state 154 between rule 95 and token '%' resolved as shift.
+Conflict in state 154 between rule 95 and token '==' resolved as reduce.
+Conflict in state 154 between rule 95 and token '>=' resolved as reduce.
+Conflict in state 154 between rule 95 and token '*' resolved as shift.
+Conflict in state 154 between rule 95 and token '!=' resolved as reduce.
+Conflict in state 154 between rule 95 and token '&' resolved as reduce.
+Conflict in state 154 between rule 95 and token '/' resolved as shift.
+Conflict in state 154 between rule 95 and token '=' resolved as reduce.
+Conflict in state 154 between rule 95 and token '|' resolved as reduce.
+Conflict in state 154 between rule 95 and token '<=' resolved as reduce.
+Conflict in state 154 between rule 95 and token '>' resolved as reduce.
+Conflict in state 155 between rule 94 and token '-' resolved as reduce.
+Conflict in state 155 between rule 94 and token '<' resolved as reduce.
+Conflict in state 155 between rule 94 and token '+' resolved as reduce.
+Conflict in state 155 between rule 94 and token '**' resolved as shift.
+Conflict in state 155 between rule 94 and token '%' resolved as reduce.
+Conflict in state 155 between rule 94 and token '==' resolved as reduce.
+Conflict in state 155 between rule 94 and token '>=' resolved as reduce.
+Conflict in state 155 between rule 94 and token '*' resolved as reduce.
+Conflict in state 155 between rule 94 and token '!=' resolved as reduce.
+Conflict in state 155 between rule 94 and token '&' resolved as reduce.
+Conflict in state 155 between rule 94 and token '/' resolved as reduce.
+Conflict in state 155 between rule 94 and token '=' resolved as reduce.
+Conflict in state 155 between rule 94 and token '|' resolved as reduce.
+Conflict in state 155 between rule 94 and token '<=' resolved as reduce.
+Conflict in state 155 between rule 94 and token '>' resolved as reduce.
+Conflict in state 156 between rule 99 and token '-' resolved as shift.
+Conflict in state 156 between rule 99 and token '<' resolved as shift.
+Conflict in state 156 between rule 99 and token '+' resolved as shift.
+Conflict in state 156 between rule 99 and token '**' resolved as shift.
+Conflict in state 156 between rule 99 and token '%' resolved as shift.
+Conflict in state 156 between rule 99 and token '==' resolved as reduce.
+Conflict in state 156 between rule 99 and token '>=' resolved as shift.
+Conflict in state 156 between rule 99 and token '*' resolved as shift.
+Conflict in state 156 between rule 99 and token '!=' resolved as reduce.
+Conflict in state 156 between rule 99 and token '&' resolved as reduce.
+Conflict in state 156 between rule 99 and token '/' resolved as shift.
+Conflict in state 156 between rule 99 and token '=' resolved as reduce.
+Conflict in state 156 between rule 99 and token '|' resolved as reduce.
+Conflict in state 156 between rule 99 and token '<=' resolved as shift.
+Conflict in state 156 between rule 99 and token '>' resolved as shift.
+Conflict in state 157 between rule 97 and token '-' resolved as shift.
+Conflict in state 157 between rule 97 and token '<' resolved as reduce.
+Conflict in state 157 between rule 97 and token '+' resolved as shift.
+Conflict in state 157 between rule 97 and token '**' resolved as shift.
+Conflict in state 157 between rule 97 and token '%' resolved as shift.
+Conflict in state 157 between rule 97 and token '==' resolved as reduce.
+Conflict in state 157 between rule 97 and token '>=' resolved as reduce.
+Conflict in state 157 between rule 97 and token '*' resolved as shift.
+Conflict in state 157 between rule 97 and token '!=' resolved as reduce.
+Conflict in state 157 between rule 97 and token '&' resolved as reduce.
+Conflict in state 157 between rule 97 and token '/' resolved as shift.
+Conflict in state 157 between rule 97 and token '=' resolved as reduce.
+Conflict in state 157 between rule 97 and token '|' resolved as reduce.
+Conflict in state 157 between rule 97 and token '<=' resolved as reduce.
+Conflict in state 157 between rule 97 and token '>' resolved as reduce.
+Conflict in state 158 between rule 92 and token '-' resolved as reduce.
+Conflict in state 158 between rule 92 and token '<' resolved as reduce.
+Conflict in state 158 between rule 92 and token '+' resolved as reduce.
+Conflict in state 158 between rule 92 and token '**' resolved as shift.
+Conflict in state 158 between rule 92 and token '%' resolved as reduce.
+Conflict in state 158 between rule 92 and token '==' resolved as reduce.
+Conflict in state 158 between rule 92 and token '>=' resolved as reduce.
+Conflict in state 158 between rule 92 and token '*' resolved as reduce.
+Conflict in state 158 between rule 92 and token '!=' resolved as reduce.
+Conflict in state 158 between rule 92 and token '&' resolved as reduce.
+Conflict in state 158 between rule 92 and token '/' resolved as reduce.
+Conflict in state 158 between rule 92 and token '=' resolved as reduce.
+Conflict in state 158 between rule 92 and token '|' resolved as reduce.
+Conflict in state 158 between rule 92 and token '<=' resolved as reduce.
+Conflict in state 158 between rule 92 and token '>' resolved as reduce.
+Conflict in state 159 between rule 104 and token '-' resolved as shift.
+Conflict in state 159 between rule 104 and token '<' resolved as shift.
+Conflict in state 159 between rule 104 and token '+' resolved as shift.
+Conflict in state 159 between rule 104 and token '**' resolved as shift.
+Conflict in state 159 between rule 104 and token '%' resolved as shift.
+Conflict in state 159 between rule 104 and token '==' resolved as shift.
+Conflict in state 159 between rule 104 and token '>=' resolved as shift.
+Conflict in state 159 between rule 104 and token '*' resolved as shift.
+Conflict in state 159 between rule 104 and token '!=' resolved as shift.
+Conflict in state 159 between rule 104 and token '&' resolved as shift.
+Conflict in state 159 between rule 104 and token '/' resolved as shift.
+Conflict in state 159 between rule 104 and token '=' resolved as reduce.
+Conflict in state 159 between rule 104 and token '|' resolved as reduce.
+Conflict in state 159 between rule 104 and token '<=' resolved as shift.
+Conflict in state 159 between rule 104 and token '>' resolved as shift.
+Conflict in state 160 between rule 98 and token '-' resolved as shift.
+Conflict in state 160 between rule 98 and token '<' resolved as reduce.
+Conflict in state 160 between rule 98 and token '+' resolved as shift.
+Conflict in state 160 between rule 98 and token '**' resolved as shift.
+Conflict in state 160 between rule 98 and token '%' resolved as shift.
+Conflict in state 160 between rule 98 and token '==' resolved as reduce.
+Conflict in state 160 between rule 98 and token '>=' resolved as reduce.
+Conflict in state 160 between rule 98 and token '*' resolved as shift.
+Conflict in state 160 between rule 98 and token '!=' resolved as reduce.
+Conflict in state 160 between rule 98 and token '&' resolved as reduce.
+Conflict in state 160 between rule 98 and token '/' resolved as shift.
+Conflict in state 160 between rule 98 and token '=' resolved as reduce.
+Conflict in state 160 between rule 98 and token '|' resolved as reduce.
+Conflict in state 160 between rule 98 and token '<=' resolved as reduce.
+Conflict in state 160 between rule 98 and token '>' resolved as reduce.
+Conflict in state 161 between rule 96 and token '-' resolved as shift.
+Conflict in state 161 between rule 96 and token '<' resolved as reduce.
+Conflict in state 161 between rule 96 and token '+' resolved as shift.
+Conflict in state 161 between rule 96 and token '**' resolved as shift.
+Conflict in state 161 between rule 96 and token '%' resolved as shift.
+Conflict in state 161 between rule 96 and token '==' resolved as reduce.
+Conflict in state 161 between rule 96 and token '>=' resolved as reduce.
+Conflict in state 161 between rule 96 and token '*' resolved as shift.
+Conflict in state 161 between rule 96 and token '!=' resolved as reduce.
+Conflict in state 161 between rule 96 and token '&' resolved as reduce.
+Conflict in state 161 between rule 96 and token '/' resolved as shift.
+Conflict in state 161 between rule 96 and token '=' resolved as reduce.
+Conflict in state 161 between rule 96 and token '|' resolved as reduce.
+Conflict in state 161 between rule 96 and token '<=' resolved as reduce.
+Conflict in state 161 between rule 96 and token '>' resolved as reduce.
+Conflict in state 162 between rule 103 and token '-' resolved as reduce.
+Conflict in state 162 between rule 103 and token '<' resolved as reduce.
+Conflict in state 162 between rule 103 and token '+' resolved as reduce.
+Conflict in state 162 between rule 103 and token '**' resolved as shift.
+Conflict in state 162 between rule 103 and token '%' resolved as reduce.
+Conflict in state 162 between rule 103 and token '==' resolved as reduce.
+Conflict in state 162 between rule 103 and token '>=' resolved as reduce.
+Conflict in state 162 between rule 103 and token '*' resolved as reduce.
+Conflict in state 162 between rule 103 and token '!=' resolved as reduce.
+Conflict in state 162 between rule 103 and token '&' resolved as reduce.
+Conflict in state 162 between rule 103 and token '/' resolved as reduce.
+Conflict in state 162 between rule 103 and token '=' resolved as reduce.
+Conflict in state 162 between rule 103 and token '|' resolved as reduce.
+Conflict in state 162 between rule 103 and token '<=' resolved as reduce.
+Conflict in state 162 between rule 103 and token '>' resolved as reduce.
+Conflict in state 163 between rule 90 and token '-' resolved as reduce.
+Conflict in state 163 between rule 90 and token '<' resolved as reduce.
+Conflict in state 163 between rule 90 and token '+' resolved as reduce.
+Conflict in state 163 between rule 90 and token '**' resolved as shift.
+Conflict in state 163 between rule 90 and token '%' resolved as shift.
+Conflict in state 163 between rule 90 and token '==' resolved as reduce.
+Conflict in state 163 between rule 90 and token '>=' resolved as reduce.
+Conflict in state 163 between rule 90 and token '*' resolved as shift.
+Conflict in state 163 between rule 90 and token '!=' resolved as reduce.
+Conflict in state 163 between rule 90 and token '&' resolved as reduce.
+Conflict in state 163 between rule 90 and token '/' resolved as shift.
+Conflict in state 163 between rule 90 and token '=' resolved as reduce.
+Conflict in state 163 between rule 90 and token '|' resolved as reduce.
+Conflict in state 163 between rule 90 and token '<=' resolved as reduce.
+Conflict in state 163 between rule 90 and token '>' resolved as reduce.
+Conflict in state 164 between rule 101 and token '-' resolved as shift.
+Conflict in state 164 between rule 101 and token '<' resolved as shift.
+Conflict in state 164 between rule 101 and token '+' resolved as shift.
+Conflict in state 164 between rule 101 and token '**' resolved as shift.
+Conflict in state 164 between rule 101 and token '%' resolved as shift.
+Conflict in state 164 between rule 101 and token '==' resolved as reduce.
+Conflict in state 164 between rule 101 and token '>=' resolved as shift.
+Conflict in state 164 between rule 101 and token '*' resolved as shift.
+Conflict in state 164 between rule 101 and token '!=' resolved as reduce.
+Conflict in state 164 between rule 101 and token '&' resolved as reduce.
+Conflict in state 164 between rule 101 and token '/' resolved as shift.
+Conflict in state 164 between rule 101 and token '=' resolved as reduce.
+Conflict in state 164 between rule 101 and token '|' resolved as reduce.
+Conflict in state 164 between rule 101 and token '<=' resolved as shift.
+Conflict in state 164 between rule 101 and token '>' resolved as shift.
+Conflict in state 165 between rule 102 and token '-' resolved as shift.
+Conflict in state 165 between rule 102 and token '<' resolved as shift.
+Conflict in state 165 between rule 102 and token '+' resolved as shift.
+Conflict in state 165 between rule 102 and token '**' resolved as shift.
+Conflict in state 165 between rule 102 and token '%' resolved as shift.
+Conflict in state 165 between rule 102 and token '==' resolved as shift.
+Conflict in state 165 between rule 102 and token '>=' resolved as shift.
+Conflict in state 165 between rule 102 and token '*' resolved as shift.
+Conflict in state 165 between rule 102 and token '!=' resolved as shift.
+Conflict in state 165 between rule 102 and token '&' resolved as reduce.
+Conflict in state 165 between rule 102 and token '/' resolved as shift.
+Conflict in state 165 between rule 102 and token '=' resolved as reduce.
+Conflict in state 165 between rule 102 and token '|' resolved as reduce.
+Conflict in state 165 between rule 102 and token '<=' resolved as shift.
+Conflict in state 165 between rule 102 and token '>' resolved as shift.
+Conflict in state 166 between rule 93 and token '-' resolved as reduce.
+Conflict in state 166 between rule 93 and token '<' resolved as reduce.
+Conflict in state 166 between rule 93 and token '+' resolved as reduce.
+Conflict in state 166 between rule 93 and token '**' resolved as shift.
+Conflict in state 166 between rule 93 and token '%' resolved as reduce.
+Conflict in state 166 between rule 93 and token '==' resolved as reduce.
+Conflict in state 166 between rule 93 and token '>=' resolved as reduce.
+Conflict in state 166 between rule 93 and token '*' resolved as reduce.
+Conflict in state 166 between rule 93 and token '!=' resolved as reduce.
+Conflict in state 166 between rule 93 and token '&' resolved as reduce.
+Conflict in state 166 between rule 93 and token '/' resolved as reduce.
+Conflict in state 166 between rule 93 and token '=' resolved as reduce.
+Conflict in state 166 between rule 93 and token '|' resolved as reduce.
+Conflict in state 166 between rule 93 and token '<=' resolved as reduce.
+Conflict in state 166 between rule 93 and token '>' resolved as reduce.
+Conflict in state 167 between rule 100 and token '-' resolved as shift.
+Conflict in state 167 between rule 100 and token '<' resolved as shift.
+Conflict in state 167 between rule 100 and token '+' resolved as shift.
+Conflict in state 167 between rule 100 and token '**' resolved as shift.
+Conflict in state 167 between rule 100 and token '%' resolved as shift.
+Conflict in state 167 between rule 100 and token '==' resolved as shift.
+Conflict in state 167 between rule 100 and token '>=' resolved as shift.
+Conflict in state 167 between rule 100 and token '*' resolved as shift.
+Conflict in state 167 between rule 100 and token '!=' resolved as shift.
+Conflict in state 167 between rule 100 and token '&' resolved as shift.
+Conflict in state 167 between rule 100 and token '/' resolved as shift.
+Conflict in state 167 between rule 100 and token '=' resolved as shift.
+Conflict in state 167 between rule 100 and token '|' resolved as shift.
+Conflict in state 167 between rule 100 and token '<=' resolved as shift.
+Conflict in state 167 between rule 100 and token '>' resolved as shift.
+Conflict in state 170 between rule 108 and token '-' resolved as shift.
+Conflict in state 170 between rule 108 and token '<' resolved as shift.
+Conflict in state 170 between rule 108 and token '+' resolved as shift.
+Conflict in state 170 between rule 108 and token '**' resolved as shift.
+Conflict in state 170 between rule 108 and token '%' resolved as shift.
+Conflict in state 170 between rule 108 and token '==' resolved as shift.
+Conflict in state 170 between rule 108 and token '>=' resolved as shift.
+Conflict in state 170 between rule 108 and token '*' resolved as shift.
+Conflict in state 170 between rule 108 and token '!=' resolved as shift.
+Conflict in state 170 between rule 108 and token '&' resolved as shift.
+Conflict in state 170 between rule 108 and token '/' resolved as shift.
+Conflict in state 170 between rule 108 and token '=' resolved as shift.
+Conflict in state 170 between rule 108 and token '|' resolved as shift.
+Conflict in state 170 between rule 108 and token '<=' resolved as shift.
+Conflict in state 170 between rule 108 and token '>' resolved as shift.
+Conflict in state 171 between rule 107 and token '-' resolved as shift.
+Conflict in state 171 between rule 107 and token '<' resolved as shift.
+Conflict in state 171 between rule 107 and token '+' resolved as shift.
+Conflict in state 171 between rule 107 and token '**' resolved as shift.
+Conflict in state 171 between rule 107 and token '%' resolved as shift.
+Conflict in state 171 between rule 107 and token '==' resolved as shift.
+Conflict in state 171 between rule 107 and token '>=' resolved as shift.
+Conflict in state 171 between rule 107 and token '*' resolved as shift.
+Conflict in state 171 between rule 107 and token '!=' resolved as shift.
+Conflict in state 171 between rule 107 and token '&' resolved as shift.
+Conflict in state 171 between rule 107 and token '/' resolved as shift.
+Conflict in state 171 between rule 107 and token '=' resolved as shift.
+Conflict in state 171 between rule 107 and token '|' resolved as shift.
+Conflict in state 171 between rule 107 and token '<=' resolved as shift.
+Conflict in state 171 between rule 107 and token '>' resolved as shift.
+Conflict in state 172 between rule 109 and token '-' resolved as shift.
+Conflict in state 172 between rule 109 and token '<' resolved as shift.
+Conflict in state 172 between rule 109 and token '+' resolved as shift.
+Conflict in state 172 between rule 109 and token '**' resolved as shift.
+Conflict in state 172 between rule 109 and token '%' resolved as shift.
+Conflict in state 172 between rule 109 and token '==' resolved as shift.
+Conflict in state 172 between rule 109 and token '>=' resolved as shift.
+Conflict in state 172 between rule 109 and token '*' resolved as shift.
+Conflict in state 172 between rule 109 and token '!=' resolved as shift.
+Conflict in state 172 between rule 109 and token '&' resolved as shift.
+Conflict in state 172 between rule 109 and token '/' resolved as shift.
+Conflict in state 172 between rule 109 and token '=' resolved as shift.
+Conflict in state 172 between rule 109 and token '|' resolved as shift.
+Conflict in state 172 between rule 109 and token '<=' resolved as shift.
+Conflict in state 172 between rule 109 and token '>' resolved as shift.
+Conflict in state 173 between rule 110 and token '-' resolved as shift.
+Conflict in state 173 between rule 110 and token '<' resolved as shift.
+Conflict in state 173 between rule 110 and token '+' resolved as shift.
+Conflict in state 173 between rule 110 and token '**' resolved as shift.
+Conflict in state 173 between rule 110 and token '%' resolved as shift.
+Conflict in state 173 between rule 110 and token '==' resolved as shift.
+Conflict in state 173 between rule 110 and token '>=' resolved as shift.
+Conflict in state 173 between rule 110 and token '*' resolved as shift.
+Conflict in state 173 between rule 110 and token '!=' resolved as shift.
+Conflict in state 173 between rule 110 and token '&' resolved as shift.
+Conflict in state 173 between rule 110 and token '/' resolved as shift.
+Conflict in state 173 between rule 110 and token '=' resolved as shift.
+Conflict in state 173 between rule 110 and token '|' resolved as shift.
+Conflict in state 173 between rule 110 and token '<=' resolved as shift.
+Conflict in state 173 between rule 110 and token '>' resolved as shift.
+Conflict in state 174 between rule 106 and token '-' resolved as shift.
+Conflict in state 174 between rule 106 and token '<' resolved as shift.
+Conflict in state 174 between rule 106 and token '+' resolved as shift.
+Conflict in state 174 between rule 106 and token '**' resolved as shift.
+Conflict in state 174 between rule 106 and token '%' resolved as shift.
+Conflict in state 174 between rule 106 and token '==' resolved as shift.
+Conflict in state 174 between rule 106 and token '>=' resolved as shift.
+Conflict in state 174 between rule 106 and token '*' resolved as shift.
+Conflict in state 174 between rule 106 and token '!=' resolved as shift.
+Conflict in state 174 between rule 106 and token '&' resolved as shift.
+Conflict in state 174 between rule 106 and token '/' resolved as shift.
+Conflict in state 174 between rule 106 and token '=' resolved as shift.
+Conflict in state 174 between rule 106 and token '|' resolved as shift.
+Conflict in state 174 between rule 106 and token '<=' resolved as shift.
+Conflict in state 174 between rule 106 and token '>' resolved as shift.
+Conflict in state 175 between rule 105 and token '-' resolved as shift.
+Conflict in state 175 between rule 105 and token '<' resolved as shift.
+Conflict in state 175 between rule 105 and token '+' resolved as shift.
+Conflict in state 175 between rule 105 and token '**' resolved as shift.
+Conflict in state 175 between rule 105 and token '%' resolved as shift.
+Conflict in state 175 between rule 105 and token '==' resolved as shift.
+Conflict in state 175 between rule 105 and token '>=' resolved as shift.
+Conflict in state 175 between rule 105 and token '*' resolved as shift.
+Conflict in state 175 between rule 105 and token '!=' resolved as shift.
+Conflict in state 175 between rule 105 and token '&' resolved as shift.
+Conflict in state 175 between rule 105 and token '/' resolved as shift.
+Conflict in state 175 between rule 105 and token '=' resolved as shift.
+Conflict in state 175 between rule 105 and token '|' resolved as shift.
+Conflict in state 175 between rule 105 and token '<=' resolved as shift.
+Conflict in state 175 between rule 105 and token '>' resolved as shift.
+State 83 contains 1 shift/reduce conflict
+
+Rules:
+------
+0:	$start -> program $end
+1:	program -> definitions
+2:	definitions -> definition
+3:	definitions -> definitions definition
+4:	definitions -> error
+5:	definitions -> definitions error
+6:	definition -> funcDef
+7:	definition -> type funcDef
+8:	definition -> declaration
+9:	type -> StructType
+10:	type -> SimpleType
+11:	StructType -> STRUCT '{' FieldDefPart '}'
+12:	SimpleType -> INT
+13:	SimpleType -> LONG
+14:	FieldDefPart -> /* empty */
+15:	FieldDefPart -> FieldDef
+16:	FieldDef -> type FieldList ';'
+17:	FieldDef -> FieldDef type FieldList
+18:	FieldList -> Field
+19:	FieldList -> FieldList ',' Field
+20:	Field -> ID arrayPart
+21:	funcDef -> ID '(' opParList ')' paramDecls compStat
+22:	opParList -> /* empty */
+23:	opParList -> paramList
+24:	paramList -> ID
+25:	paramList -> ID ',' paramList
+26:	paramList -> error
+27:	paramList -> error paramList
+28:	paramList -> ID error paramList
+29:	paramList -> error ',' paramList
+30:	paramDecls -> /* empty */
+31:	paramDecls -> paramDecls paramDecl
+32:	paramDecls -> paramDecls error
+33:	paramDecl -> type paramDeclList ';'
+34:	paramDeclList -> ID
+35:	paramDeclList -> paramDeclList ',' ID
+36:	paramDeclList -> error
+37:	paramDeclList -> paramDeclList error
+38:	paramDeclList -> paramDeclList error ID
+39:	paramDeclList -> paramDeclList ',' error
+40:	compStat -> '{' declarations statements '}'
+41:	declarations -> /* empty */
+42:	declarations -> declarations declaration
+43:	declaration -> type declList ';'
+44:	declList -> ID arrayPart
+45:	declList -> declList ',' ID arrayPart
+46:	arrayPart -> /* empty */
+47:	arrayPart -> arrayList
+48:	arrayList -> '[' ICONST ']'
+49:	arrayList -> arrayList '[' ICONST ']'
+50:	statements -> /* empty */
+51:	statements -> statement statements
+52:	statement -> expression ';'
+53:	statement -> ';'
+54:	statement -> BREAK ';'
+55:	statement -> CONTINUE ';'
+56:	statement -> RETURN ';'
+57:	statement -> RETURN expression ';'
+58:	statement -> compStat
+59:	statement -> ifPrefix statement
+60:	statement -> ifPrefix statement 'ELSE' statement
+61:	statement -> loopPrefix statement
+62:	ifPrefix -> IF '(' expression ')'
+63:	ifPrefix -> IF error
+64:	loopPrefix -> WHILE '(' expression ')'
+65:	loopPrefix -> WHILE error
+66:	expression -> binary
+67:	expression -> expression ',' binary
+68:	expression -> error ',' binary
+69:	expression -> expression error
+70:	expression -> expression ',' error
+71:	Variable -> Vararray
+72:	Variable -> Varstruct
+73:	Vararray -> ID
+74:	Vararray -> ID accessList
+75:	Varstruct -> ID fieldaccess
+76:	accessList -> '[' binary ']'
+77:	accessList -> accessList '[' binary ']'
+78:	fieldaccess -> fieldaccess '.' Vararray
+79:	fieldaccess -> '.' Vararray
+80:	Primary -> ICONST
+81:	Primary -> LCONST
+82:	Primary -> Variable
+83:	Primary -> '(' expression ')'
+84:	Primary -> '(' error ')'
+85:	Primary -> ID '(' opArgList ')'
+86:	Unary -> '++' Variable
+87:	Unary -> '--' Variable
+88:	Unary -> Primary
+89:	binary -> Unary
+90:	binary -> binary '+' binary
+91:	binary -> binary '-' binary
+92:	binary -> binary '*' binary
+93:	binary -> binary '/' binary
+94:	binary -> binary '%' binary
+95:	binary -> binary '<' binary
+96:	binary -> binary '>' binary
+97:	binary -> binary '>=' binary
+98:	binary -> binary '<=' binary
+99:	binary -> binary '==' binary
+100:	binary -> binary '=' binary
+101:	binary -> binary '!=' binary
+102:	binary -> binary '&' binary
+103:	binary -> binary '**' binary
+104:	binary -> binary '|' binary
+105:	binary -> Variable '=' binary
+106:	binary -> Variable '+=' binary
+107:	binary -> Variable '-=' binary
+108:	binary -> Variable '*=' binary
+109:	binary -> Variable '/=' binary
+110:	binary -> Variable '%=' binary
+111:	opArgList -> /* empty */
+112:	opArgList -> argList
+113:	argList -> binary
+114:	argList -> argList ',' binary
+115:	argList -> error
+116:	argList -> argList error
+117:	argList -> argList ',' error
+
+States:
+-------
+State 0:
+
+	$start -> . program $end	(Rule 0)
+
+	ID	shift, and go to state 1
+	INT	shift, and go to state 5
+	LONG	shift, and go to state 13
+	STRUCT	shift, and go to state 6
+	error	shift, and go to state 11
+
+	declaration	go to state 10
+	funcDef	go to state 4
+	StructType	go to state 3
+	SimpleType	go to state 2
+	type	go to state 12
+	definitions	go to state 7
+	program	go to state 9
+	definition	go to state 8
+
+State 1:
+
+	funcDef -> ID . '(' opParList ')' paramDecls compStat	(Rule 21)
+
+	'('	shift, and go to state 14
+
+State 2:
+
+	type -> SimpleType .	(Rule 10)
+
+	$default	reduce using rule 10 (type)
+
+State 3:
+
+	type -> StructType .	(Rule 9)
+
+	$default	reduce using rule 9 (type)
+
+State 4:
+
+	definition -> funcDef .	(Rule 6)
+
+	$default	reduce using rule 6 (definition)
+
+State 5:
+
+	SimpleType -> INT .	(Rule 12)
+
+	$default	reduce using rule 12 (SimpleType)
+
+State 6:
+
+	StructType -> STRUCT . '{' FieldDefPart '}'	(Rule 11)
+
+	'{'	shift, and go to state 15
+
+State 7:
+
+	program -> definitions .	(Rule 1)
+	definitions -> definitions . definition	(Rule 3)
+	definitions -> definitions . error	(Rule 5)
+
+	ID	shift, and go to state 1
+	INT	shift, and go to state 5
+	LONG	shift, and go to state 13
+	STRUCT	shift, and go to state 6
+	error	shift, and go to state 17
+
+	$end	reduce using rule 1 (program)
+
+	declaration	go to state 10
+	funcDef	go to state 4
+	StructType	go to state 3
+	SimpleType	go to state 2
+	type	go to state 12
+	definition	go to state 16
+
+State 8:
+
+	definitions -> definition .	(Rule 2)
+
+	$default	reduce using rule 2 (definitions)
+
+State 9:
+
+	$start -> program . $end	(Rule 0)
+
+	$end	shift, and go to state 18
+
+State 10:
+
+	definition -> declaration .	(Rule 8)
+
+	$default	reduce using rule 8 (definition)
+
+State 11:
+
+	definitions -> error .	(Rule 4)
+
+	$default	reduce using rule 4 (definitions)
+
+State 12:
+
+	definition -> type . funcDef	(Rule 7)
+	declaration -> type . declList ';'	(Rule 43)
+
+	ID	shift, and go to state 19
+
+	funcDef	go to state 20
+	declList	go to state 21
+
+State 13:
+
+	SimpleType -> LONG .	(Rule 13)
+
+	$default	reduce using rule 13 (SimpleType)
+
+State 14:
+
+	funcDef -> ID '(' . opParList ')' paramDecls compStat	(Rule 21)
+
+	ID	shift, and go to state 22
+	error	shift, and go to state 25
+
+	')'	reduce using rule 22 (opParList)
+
+	paramList	go to state 23
+	opParList	go to state 24
+
+State 15:
+
+	StructType -> STRUCT '{' . FieldDefPart '}'	(Rule 11)
+
+	INT	shift, and go to state 5
+	LONG	shift, and go to state 13
+	STRUCT	shift, and go to state 6
+
+	$default	reduce using rule 14 (FieldDefPart)
+
+	StructType	go to state 3
+	SimpleType	go to state 2
+	FieldDefPart	go to state 26
+	FieldDef	go to state 27
+	type	go to state 28
+
+State 16:
+
+	definitions -> definitions definition .	(Rule 3)
+
+	$default	reduce using rule 3 (definitions)
+
+State 17:
+
+	definitions -> definitions error .	(Rule 5)
+
+	$default	reduce using rule 5 (definitions)
+
+State 18:
+
+	$start -> program $end .	(Rule 0)
+
+	$default	accept
+
+State 19:
+
+	funcDef -> ID . '(' opParList ')' paramDecls compStat	(Rule 21)
+	declList -> ID . arrayPart	(Rule 44)
+
+	'('	shift, and go to state 14
+	'['	shift, and go to state 30
+
+	$default	reduce using rule 46 (arrayPart)
+
+	arrayList	go to state 29
+	arrayPart	go to state 31
+
+State 20:
+
+	definition -> type funcDef .	(Rule 7)
+
+	$default	reduce using rule 7 (definition)
+
+State 21:
+
+	declaration -> type declList . ';'	(Rule 43)
+	declList -> declList . ',' ID arrayPart	(Rule 45)
+
+	','	shift, and go to state 33
+	';'	shift, and go to state 32
+
+State 22:
+
+	paramList -> ID .	(Rule 24)
+	paramList -> ID . ',' paramList	(Rule 25)
+	paramList -> ID . error paramList	(Rule 28)
+
+	','	shift, and go to state 34
+	error	shift, and go to state 35
+
+	')'	reduce using rule 24 (paramList)
+
+State 23:
+
+	opParList -> paramList .	(Rule 23)
+
+	$default	reduce using rule 23 (opParList)
+
+State 24:
+
+	funcDef -> ID '(' opParList . ')' paramDecls compStat	(Rule 21)
+
+	')'	shift, and go to state 36
+
+State 25:
+
+	paramList -> error .	(Rule 26)
+	paramList -> error . paramList	(Rule 27)
+	paramList -> error . ',' paramList	(Rule 29)
+
+	','	shift, and go to state 38
+	ID	shift, and go to state 22
+	error	shift, and go to state 25
+
+	')'	reduce using rule 26 (paramList)
+
+	paramList	go to state 37
+
+State 26:
+
+	StructType -> STRUCT '{' FieldDefPart . '}'	(Rule 11)
+
+	'}'	shift, and go to state 39
+
+State 27:
+
+	FieldDefPart -> FieldDef .	(Rule 15)
+	FieldDef -> FieldDef . type FieldList	(Rule 17)
+
+	INT	shift, and go to state 5
+	LONG	shift, and go to state 13
+	STRUCT	shift, and go to state 6
+
+	$default	reduce using rule 15 (FieldDefPart)
+
+	StructType	go to state 3
+	SimpleType	go to state 2
+	type	go to state 40
+
+State 28:
+
+	FieldDef -> type . FieldList ';'	(Rule 16)
+
+	ID	shift, and go to state 41
+
+	FieldList	go to state 43
+	Field	go to state 42
+
+State 29:
+
+	arrayPart -> arrayList .	(Rule 47)
+	arrayList -> arrayList . '[' ICONST ']'	(Rule 49)
+
+	'['	shift, and go to state 44
+
+	$default	reduce using rule 47 (arrayPart)
+
+State 30:
+
+	arrayList -> '[' . ICONST ']'	(Rule 48)
+
+	ICONST	shift, and go to state 45
+
+State 31:
+
+	declList -> ID arrayPart .	(Rule 44)
+
+	$default	reduce using rule 44 (declList)
+
+State 32:
+
+	declaration -> type declList ';' .	(Rule 43)
+
+	$default	reduce using rule 43 (declaration)
+
+State 33:
+
+	declList -> declList ',' . ID arrayPart	(Rule 45)
+
+	ID	shift, and go to state 46
+
+State 34:
+
+	paramList -> ID ',' . paramList	(Rule 25)
+
+	ID	shift, and go to state 22
+	error	shift, and go to state 25
+
+	paramList	go to state 47
+
+State 35:
+
+	paramList -> ID error . paramList	(Rule 28)
+
+	ID	shift, and go to state 22
+	error	shift, and go to state 25
+
+	paramList	go to state 48
+
+State 36:
+
+	funcDef -> ID '(' opParList ')' . paramDecls compStat	(Rule 21)
+
+	$default	reduce using rule 30 (paramDecls)
+
+	paramDecls	go to state 49
+
+State 37:
+
+	paramList -> error paramList .	(Rule 27)
+
+	$default	reduce using rule 27 (paramList)
+
+State 38:
+
+	paramList -> error ',' . paramList	(Rule 29)
+
+	ID	shift, and go to state 22
+	error	shift, and go to state 25
+
+	paramList	go to state 50
+
+State 39:
+
+	StructType -> STRUCT '{' FieldDefPart '}' .	(Rule 11)
+
+	$default	reduce using rule 11 (StructType)
+
+State 40:
+
+	FieldDef -> FieldDef type . FieldList	(Rule 17)
+
+	ID	shift, and go to state 41
+
+	FieldList	go to state 51
+	Field	go to state 42
+
+State 41:
+
+	Field -> ID . arrayPart	(Rule 20)
+
+	'['	shift, and go to state 30
+
+	$default	reduce using rule 46 (arrayPart)
+
+	arrayList	go to state 29
+	arrayPart	go to state 52
+
+State 42:
+
+	FieldList -> Field .	(Rule 18)
+
+	$default	reduce using rule 18 (FieldList)
+
+State 43:
+
+	FieldDef -> type FieldList . ';'	(Rule 16)
+	FieldList -> FieldList . ',' Field	(Rule 19)
+
+	','	shift, and go to state 54
+	';'	shift, and go to state 53
+
+State 44:
+
+	arrayList -> arrayList '[' . ICONST ']'	(Rule 49)
+
+	ICONST	shift, and go to state 55
+
+State 45:
+
+	arrayList -> '[' ICONST . ']'	(Rule 48)
+
+	']'	shift, and go to state 56
+
+State 46:
+
+	declList -> declList ',' ID . arrayPart	(Rule 45)
+
+	'['	shift, and go to state 30
+
+	$default	reduce using rule 46 (arrayPart)
+
+	arrayList	go to state 29
+	arrayPart	go to state 57
+
+State 47:
+
+	paramList -> ID ',' paramList .	(Rule 25)
+
+	$default	reduce using rule 25 (paramList)
+
+State 48:
+
+	paramList -> ID error paramList .	(Rule 28)
+
+	$default	reduce using rule 28 (paramList)
+
+State 49:
+
+	funcDef -> ID '(' opParList ')' paramDecls . compStat	(Rule 21)
+	paramDecls -> paramDecls . paramDecl	(Rule 31)
+	paramDecls -> paramDecls . error	(Rule 32)
+
+	'{'	shift, and go to state 58
+	INT	shift, and go to state 5
+	LONG	shift, and go to state 13
+	STRUCT	shift, and go to state 6
+	error	shift, and go to state 59
+
+	StructType	go to state 3
+	SimpleType	go to state 2
+	paramDecl	go to state 60
+	compStat	go to state 62
+	type	go to state 61
+
+State 50:
+
+	paramList -> error ',' paramList .	(Rule 29)
+
+	$default	reduce using rule 29 (paramList)
+
+State 51:
+
+	FieldDef -> FieldDef type FieldList .	(Rule 17)
+	FieldList -> FieldList . ',' Field	(Rule 19)
+
+	','	shift, and go to state 54
+
+	$default	reduce using rule 17 (FieldDef)
+
+State 52:
+
+	Field -> ID arrayPart .	(Rule 20)
+
+	$default	reduce using rule 20 (Field)
+
+State 53:
+
+	FieldDef -> type FieldList ';' .	(Rule 16)
+
+	$default	reduce using rule 16 (FieldDef)
+
+State 54:
+
+	FieldList -> FieldList ',' . Field	(Rule 19)
+
+	ID	shift, and go to state 41
+
+	Field	go to state 63
+
+State 55:
+
+	arrayList -> arrayList '[' ICONST . ']'	(Rule 49)
+
+	']'	shift, and go to state 64
+
+State 56:
+
+	arrayList -> '[' ICONST ']' .	(Rule 48)
+
+	$default	reduce using rule 48 (arrayList)
+
+State 57:
+
+	declList -> declList ',' ID arrayPart .	(Rule 45)
+
+	$default	reduce using rule 45 (declList)
+
+State 58:
+
+	compStat -> '{' . declarations statements '}'	(Rule 40)
+
+	$default	reduce using rule 41 (declarations)
+
+	declarations	go to state 65
+
+State 59:
+
+	paramDecls -> paramDecls error .	(Rule 32)
+
+	$default	reduce using rule 32 (paramDecls)
+
+State 60:
+
+	paramDecls -> paramDecls paramDecl .	(Rule 31)
+
+	$default	reduce using rule 31 (paramDecls)
+
+State 61:
+
+	paramDecl -> type . paramDeclList ';'	(Rule 33)
+
+	ID	shift, and go to state 66
+	error	shift, and go to state 68
+
+	paramDeclList	go to state 67
+
+State 62:
+
+	funcDef -> ID '(' opParList ')' paramDecls compStat .	(Rule 21)
+
+	$default	reduce using rule 21 (funcDef)
+
+State 63:
+
+	FieldList -> FieldList ',' Field .	(Rule 19)
+
+	$default	reduce using rule 19 (FieldList)
+
+State 64:
+
+	arrayList -> arrayList '[' ICONST ']' .	(Rule 49)
+
+	$default	reduce using rule 49 (arrayList)
+
+State 65:
+
+	compStat -> '{' declarations . statements '}'	(Rule 40)
+	declarations -> declarations . declaration	(Rule 42)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	';'	shift, and go to state 86
+	'{'	shift, and go to state 58
+	BREAK	shift, and go to state 69
+	CONTINUE	shift, and go to state 79
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	IF	shift, and go to state 72
+	INT	shift, and go to state 5
+	LCONST	shift, and go to state 81
+	LONG	shift, and go to state 13
+	RETURN	shift, and go to state 91
+	STRUCT	shift, and go to state 6
+	WHILE	shift, and go to state 94
+	error	shift, and go to state 92
+
+	'}'	reduce using rule 50 (statements)
+
+	statements	go to state 84
+	StructType	go to state 3
+	Vararray	go to state 70
+	declaration	go to state 88
+	Varstruct	go to state 90
+	statement	go to state 71
+	expression	go to state 73
+	Primary	go to state 74
+	compStat	go to state 93
+	SimpleType	go to state 2
+	Unary	go to state 76
+	binary	go to state 77
+	ifPrefix	go to state 95
+	loopPrefix	go to state 80
+	type	go to state 82
+	Variable	go to state 83
+
+State 66:
+
+	paramDeclList -> ID .	(Rule 34)
+
+	$default	reduce using rule 34 (paramDeclList)
+
+State 67:
+
+	paramDecl -> type paramDeclList . ';'	(Rule 33)
+	paramDeclList -> paramDeclList . ',' ID	(Rule 35)
+	paramDeclList -> paramDeclList . error	(Rule 37)
+	paramDeclList -> paramDeclList . error ID	(Rule 38)
+	paramDeclList -> paramDeclList . ',' error	(Rule 39)
+
+	','	shift, and go to state 97
+	';'	shift, and go to state 96
+	error	shift, and go to state 98
+
+State 68:
+
+	paramDeclList -> error .	(Rule 36)
+
+	$default	reduce using rule 36 (paramDeclList)
+
+State 69:
+
+	statement -> BREAK . ';'	(Rule 54)
+
+	';'	shift, and go to state 99
+
+State 70:
+
+	Variable -> Vararray .	(Rule 71)
+
+	$default	reduce using rule 71 (Variable)
+
+State 71:
+
+	statements -> statement . statements	(Rule 51)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	';'	shift, and go to state 86
+	'{'	shift, and go to state 58
+	BREAK	shift, and go to state 69
+	CONTINUE	shift, and go to state 79
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	IF	shift, and go to state 72
+	LCONST	shift, and go to state 81
+	RETURN	shift, and go to state 91
+	WHILE	shift, and go to state 94
+	error	shift, and go to state 92
+
+	'}'	reduce using rule 50 (statements)
+
+	statements	go to state 100
+	Unary	go to state 76
+	binary	go to state 77
+	Vararray	go to state 70
+	statement	go to state 71
+	Varstruct	go to state 90
+	ifPrefix	go to state 95
+	expression	go to state 73
+	Primary	go to state 74
+	loopPrefix	go to state 80
+	compStat	go to state 93
+	Variable	go to state 83
+
+State 72:
+
+	ifPrefix -> IF . '(' expression ')'	(Rule 62)
+	ifPrefix -> IF . error	(Rule 63)
+
+	'('	shift, and go to state 101
+	error	shift, and go to state 102
+
+State 73:
+
+	statement -> expression . ';'	(Rule 52)
+	expression -> expression . ',' binary	(Rule 67)
+	expression -> expression . error	(Rule 69)
+	expression -> expression . ',' error	(Rule 70)
+
+	','	shift, and go to state 104
+	';'	shift, and go to state 103
+	error	shift, and go to state 105
+
+State 74:
+
+	Unary -> Primary .	(Rule 88)
+
+	$default	reduce using rule 88 (Unary)
+
+State 75:
+
+	Unary -> '--' . Variable	(Rule 87)
+
+	ID	shift, and go to state 107
+
+	Varstruct	go to state 90
+	Vararray	go to state 70
+	Variable	go to state 106
+
+State 76:
+
+	binary -> Unary .	(Rule 89)
+
+	$default	reduce using rule 89 (binary)
+
+State 77:
+
+	expression -> binary .	(Rule 66)
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+
+	'!='	shift, and go to state 119
+	'%'	shift, and go to state 110
+	'&'	shift, and go to state 120
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+	'<'	shift, and go to state 109
+	'<='	shift, and go to state 115
+	'='	shift, and go to state 122
+	'=='	shift, and go to state 111
+	'>'	shift, and go to state 116
+	'>='	shift, and go to state 112
+	'|'	shift, and go to state 114
+
+	$default	reduce using rule 66 (expression)
+
+State 78:
+
+	Primary -> '(' . expression ')'	(Rule 83)
+	Primary -> '(' . error ')'	(Rule 84)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+	error	shift, and go to state 124
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	expression	go to state 123
+	binary	go to state 77
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 79:
+
+	statement -> CONTINUE . ';'	(Rule 55)
+
+	';'	shift, and go to state 125
+
+State 80:
+
+	statement -> loopPrefix . statement	(Rule 61)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	';'	shift, and go to state 86
+	'{'	shift, and go to state 58
+	BREAK	shift, and go to state 69
+	CONTINUE	shift, and go to state 79
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	IF	shift, and go to state 72
+	LCONST	shift, and go to state 81
+	RETURN	shift, and go to state 91
+	WHILE	shift, and go to state 94
+	error	shift, and go to state 92
+
+	Unary	go to state 76
+	binary	go to state 77
+	Vararray	go to state 70
+	statement	go to state 126
+	Varstruct	go to state 90
+	ifPrefix	go to state 95
+	expression	go to state 73
+	Primary	go to state 74
+	loopPrefix	go to state 80
+	compStat	go to state 93
+	Variable	go to state 83
+
+State 81:
+
+	Primary -> LCONST .	(Rule 81)
+
+	$default	reduce using rule 81 (Primary)
+
+State 82:
+
+	declaration -> type . declList ';'	(Rule 43)
+
+	ID	shift, and go to state 127
+
+	declList	go to state 21
+
+State 83:
+
+	Primary -> Variable .	(Rule 82)
+	binary -> Variable . '=' binary	(Rule 105)
+	binary -> Variable . '+=' binary	(Rule 106)
+	binary -> Variable . '-=' binary	(Rule 107)
+	binary -> Variable . '*=' binary	(Rule 108)
+	binary -> Variable . '/=' binary	(Rule 109)
+	binary -> Variable . '%=' binary	(Rule 110)
+
+	'%='	shift, and go to state 131
+	'*='	shift, and go to state 128
+	'+='	shift, and go to state 132
+	'-='	shift, and go to state 129
+	'/='	shift, and go to state 130
+	'='	shift, and go to state 133
+
+	'='	[reduce using rule 82 (Primary)]
+	$default	reduce using rule 82 (Primary)
+
+State 84:
+
+	compStat -> '{' declarations statements . '}'	(Rule 40)
+
+	'}'	shift, and go to state 134
+
+State 85:
+
+	Vararray -> ID .	(Rule 73)
+	Vararray -> ID . accessList	(Rule 74)
+	Varstruct -> ID . fieldaccess	(Rule 75)
+	Primary -> ID . '(' opArgList ')'	(Rule 85)
+
+	'('	shift, and go to state 136
+	'.'	shift, and go to state 138
+	'['	shift, and go to state 135
+
+	$default	reduce using rule 73 (Vararray)
+
+	fieldaccess	go to state 137
+	accessList	go to state 139
+
+State 86:
+
+	statement -> ';' .	(Rule 53)
+
+	$default	reduce using rule 53 (statement)
+
+State 87:
+
+	Primary -> ICONST .	(Rule 80)
+
+	$default	reduce using rule 80 (Primary)
+
+State 88:
+
+	declarations -> declarations declaration .	(Rule 42)
+
+	$default	reduce using rule 42 (declarations)
+
+State 89:
+
+	Unary -> '++' . Variable	(Rule 86)
+
+	ID	shift, and go to state 107
+
+	Varstruct	go to state 90
+	Vararray	go to state 70
+	Variable	go to state 140
+
+State 90:
+
+	Variable -> Varstruct .	(Rule 72)
+
+	$default	reduce using rule 72 (Variable)
+
+State 91:
+
+	statement -> RETURN . ';'	(Rule 56)
+	statement -> RETURN . expression ';'	(Rule 57)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	';'	shift, and go to state 142
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+	error	shift, and go to state 92
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	expression	go to state 141
+	binary	go to state 77
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 92:
+
+	expression -> error . ',' binary	(Rule 68)
+
+	','	shift, and go to state 143
+
+State 93:
+
+	statement -> compStat .	(Rule 58)
+
+	$default	reduce using rule 58 (statement)
+
+State 94:
+
+	loopPrefix -> WHILE . '(' expression ')'	(Rule 64)
+	loopPrefix -> WHILE . error	(Rule 65)
+
+	'('	shift, and go to state 144
+	error	shift, and go to state 145
+
+State 95:
+
+	statement -> ifPrefix . statement	(Rule 59)
+	statement -> ifPrefix . statement 'ELSE' statement	(Rule 60)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	';'	shift, and go to state 86
+	'{'	shift, and go to state 58
+	BREAK	shift, and go to state 69
+	CONTINUE	shift, and go to state 79
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	IF	shift, and go to state 72
+	LCONST	shift, and go to state 81
+	RETURN	shift, and go to state 91
+	WHILE	shift, and go to state 94
+	error	shift, and go to state 92
+
+	Unary	go to state 76
+	binary	go to state 77
+	Vararray	go to state 70
+	statement	go to state 146
+	Varstruct	go to state 90
+	ifPrefix	go to state 95
+	expression	go to state 73
+	Primary	go to state 74
+	loopPrefix	go to state 80
+	compStat	go to state 93
+	Variable	go to state 83
+
+State 96:
+
+	paramDecl -> type paramDeclList ';' .	(Rule 33)
+
+	$default	reduce using rule 33 (paramDecl)
+
+State 97:
+
+	paramDeclList -> paramDeclList ',' . ID	(Rule 35)
+	paramDeclList -> paramDeclList ',' . error	(Rule 39)
+
+	ID	shift, and go to state 147
+	error	shift, and go to state 148
+
+State 98:
+
+	paramDeclList -> paramDeclList error .	(Rule 37)
+	paramDeclList -> paramDeclList error . ID	(Rule 38)
+
+	ID	shift, and go to state 149
+
+	$default	reduce using rule 37 (paramDeclList)
+
+State 99:
+
+	statement -> BREAK ';' .	(Rule 54)
+
+	$default	reduce using rule 54 (statement)
+
+State 100:
+
+	statements -> statement statements .	(Rule 51)
+
+	$default	reduce using rule 51 (statements)
+
+State 101:
+
+	ifPrefix -> IF '(' . expression ')'	(Rule 62)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+	error	shift, and go to state 92
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	expression	go to state 150
+	binary	go to state 77
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 102:
+
+	ifPrefix -> IF error .	(Rule 63)
+
+	$default	reduce using rule 63 (ifPrefix)
+
+State 103:
+
+	statement -> expression ';' .	(Rule 52)
+
+	$default	reduce using rule 52 (statement)
+
+State 104:
+
+	expression -> expression ',' . binary	(Rule 67)
+	expression -> expression ',' . error	(Rule 70)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+	error	shift, and go to state 152
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 151
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 105:
+
+	expression -> expression error .	(Rule 69)
+
+	$default	reduce using rule 69 (expression)
+
+State 106:
+
+	Unary -> '--' Variable .	(Rule 87)
+
+	$default	reduce using rule 87 (Unary)
+
+State 107:
+
+	Vararray -> ID .	(Rule 73)
+	Vararray -> ID . accessList	(Rule 74)
+	Varstruct -> ID . fieldaccess	(Rule 75)
+
+	'.'	shift, and go to state 138
+	'['	shift, and go to state 135
+
+	$default	reduce using rule 73 (Vararray)
+
+	fieldaccess	go to state 137
+	accessList	go to state 139
+
+State 108:
+
+	binary -> binary '-' . binary	(Rule 91)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 153
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 109:
+
+	binary -> binary '<' . binary	(Rule 95)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 154
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 110:
+
+	binary -> binary '%' . binary	(Rule 94)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 155
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 111:
+
+	binary -> binary '==' . binary	(Rule 99)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 156
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 112:
+
+	binary -> binary '>=' . binary	(Rule 97)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 157
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 113:
+
+	binary -> binary '*' . binary	(Rule 92)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 158
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 114:
+
+	binary -> binary '|' . binary	(Rule 104)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 159
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 115:
+
+	binary -> binary '<=' . binary	(Rule 98)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 160
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 116:
+
+	binary -> binary '>' . binary	(Rule 96)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 161
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 117:
+
+	binary -> binary '**' . binary	(Rule 103)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 162
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 118:
+
+	binary -> binary '+' . binary	(Rule 90)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 163
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 119:
+
+	binary -> binary '!=' . binary	(Rule 101)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 164
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 120:
+
+	binary -> binary '&' . binary	(Rule 102)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 165
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 121:
+
+	binary -> binary '/' . binary	(Rule 93)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 166
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 122:
+
+	binary -> binary '=' . binary	(Rule 100)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 167
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 123:
+
+	expression -> expression . ',' binary	(Rule 67)
+	expression -> expression . error	(Rule 69)
+	expression -> expression . ',' error	(Rule 70)
+	Primary -> '(' expression . ')'	(Rule 83)
+
+	')'	shift, and go to state 168
+	','	shift, and go to state 104
+	error	shift, and go to state 105
+
+State 124:
+
+	expression -> error . ',' binary	(Rule 68)
+	Primary -> '(' error . ')'	(Rule 84)
+
+	')'	shift, and go to state 169
+	','	shift, and go to state 143
+
+State 125:
+
+	statement -> CONTINUE ';' .	(Rule 55)
+
+	$default	reduce using rule 55 (statement)
+
+State 126:
+
+	statement -> loopPrefix statement .	(Rule 61)
+
+	$default	reduce using rule 61 (statement)
+
+State 127:
+
+	declList -> ID . arrayPart	(Rule 44)
+
+	'['	shift, and go to state 30
+
+	$default	reduce using rule 46 (arrayPart)
+
+	arrayList	go to state 29
+	arrayPart	go to state 31
+
+State 128:
+
+	binary -> Variable '*=' . binary	(Rule 108)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 170
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 129:
+
+	binary -> Variable '-=' . binary	(Rule 107)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 171
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 130:
+
+	binary -> Variable '/=' . binary	(Rule 109)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 172
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 131:
+
+	binary -> Variable '%=' . binary	(Rule 110)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 173
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 132:
+
+	binary -> Variable '+=' . binary	(Rule 106)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 174
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 133:
+
+	binary -> Variable '=' . binary	(Rule 105)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 175
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 134:
+
+	compStat -> '{' declarations statements '}' .	(Rule 40)
+
+	$default	reduce using rule 40 (compStat)
+
+State 135:
+
+	accessList -> '[' . binary ']'	(Rule 76)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 176
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 136:
+
+	Primary -> ID '(' . opArgList ')'	(Rule 85)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+	error	shift, and go to state 179
+
+	')'	reduce using rule 111 (opArgList)
+
+	argList	go to state 180
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 178
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+	opArgList	go to state 177
+
+State 137:
+
+	Varstruct -> ID fieldaccess .	(Rule 75)
+	fieldaccess -> fieldaccess . '.' Vararray	(Rule 78)
+
+	'.'	shift, and go to state 181
+
+	$default	reduce using rule 75 (Varstruct)
+
+State 138:
+
+	fieldaccess -> '.' . Vararray	(Rule 79)
+
+	ID	shift, and go to state 183
+
+	Vararray	go to state 182
+
+State 139:
+
+	Vararray -> ID accessList .	(Rule 74)
+	accessList -> accessList . '[' binary ']'	(Rule 77)
+
+	'['	shift, and go to state 184
+
+	$default	reduce using rule 74 (Vararray)
+
+State 140:
+
+	Unary -> '++' Variable .	(Rule 86)
+
+	$default	reduce using rule 86 (Unary)
+
+State 141:
+
+	statement -> RETURN expression . ';'	(Rule 57)
+	expression -> expression . ',' binary	(Rule 67)
+	expression -> expression . error	(Rule 69)
+	expression -> expression . ',' error	(Rule 70)
+
+	','	shift, and go to state 104
+	';'	shift, and go to state 185
+	error	shift, and go to state 105
+
+State 142:
+
+	statement -> RETURN ';' .	(Rule 56)
+
+	$default	reduce using rule 56 (statement)
+
+State 143:
+
+	expression -> error ',' . binary	(Rule 68)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 186
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 144:
+
+	loopPrefix -> WHILE '(' . expression ')'	(Rule 64)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+	error	shift, and go to state 92
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	expression	go to state 187
+	binary	go to state 77
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 145:
+
+	loopPrefix -> WHILE error .	(Rule 65)
+
+	$default	reduce using rule 65 (loopPrefix)
+
+State 146:
+
+	statement -> ifPrefix statement .	(Rule 59)
+	statement -> ifPrefix statement . 'ELSE' statement	(Rule 60)
+
+	'ELSE'	shift, and go to state 188
+
+	$default	reduce using rule 59 (statement)
+
+State 147:
+
+	paramDeclList -> paramDeclList ',' ID .	(Rule 35)
+
+	$default	reduce using rule 35 (paramDeclList)
+
+State 148:
+
+	paramDeclList -> paramDeclList ',' error .	(Rule 39)
+
+	$default	reduce using rule 39 (paramDeclList)
+
+State 149:
+
+	paramDeclList -> paramDeclList error ID .	(Rule 38)
+
+	$default	reduce using rule 38 (paramDeclList)
+
+State 150:
+
+	ifPrefix -> IF '(' expression . ')'	(Rule 62)
+	expression -> expression . ',' binary	(Rule 67)
+	expression -> expression . error	(Rule 69)
+	expression -> expression . ',' error	(Rule 70)
+
+	')'	shift, and go to state 189
+	','	shift, and go to state 104
+	error	shift, and go to state 105
+
+State 151:
+
+	expression -> expression ',' binary .	(Rule 67)
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+
+	'!='	shift, and go to state 119
+	'%'	shift, and go to state 110
+	'&'	shift, and go to state 120
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+	'<'	shift, and go to state 109
+	'<='	shift, and go to state 115
+	'='	shift, and go to state 122
+	'=='	shift, and go to state 111
+	'>'	shift, and go to state 116
+	'>='	shift, and go to state 112
+	'|'	shift, and go to state 114
+
+	$default	reduce using rule 67 (expression)
+
+State 152:
+
+	expression -> expression ',' error .	(Rule 70)
+
+	$default	reduce using rule 70 (expression)
+
+State 153:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary '-' binary .	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+
+	'%'	shift, and go to state 110
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'/'	shift, and go to state 121
+
+	$default	reduce using rule 91 (binary)
+
+State 154:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary '<' binary .	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+
+	'%'	shift, and go to state 110
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+
+	$default	reduce using rule 95 (binary)
+
+State 155:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary '%' binary .	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+
+	'**'	shift, and go to state 117
+
+	$default	reduce using rule 94 (binary)
+
+State 156:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary '==' binary .	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+
+	'%'	shift, and go to state 110
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+	'<'	shift, and go to state 109
+	'<='	shift, and go to state 115
+	'>'	shift, and go to state 116
+	'>='	shift, and go to state 112
+
+	$default	reduce using rule 99 (binary)
+
+State 157:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary '>=' binary .	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+
+	'%'	shift, and go to state 110
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+
+	$default	reduce using rule 97 (binary)
+
+State 158:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary '*' binary .	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+
+	'**'	shift, and go to state 117
+
+	$default	reduce using rule 92 (binary)
+
+State 159:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+	binary -> binary '|' binary .	(Rule 104)
+
+	'!='	shift, and go to state 119
+	'%'	shift, and go to state 110
+	'&'	shift, and go to state 120
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+	'<'	shift, and go to state 109
+	'<='	shift, and go to state 115
+	'=='	shift, and go to state 111
+	'>'	shift, and go to state 116
+	'>='	shift, and go to state 112
+
+	$default	reduce using rule 104 (binary)
+
+State 160:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary '<=' binary .	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+
+	'%'	shift, and go to state 110
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+
+	$default	reduce using rule 98 (binary)
+
+State 161:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary '>' binary .	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+
+	'%'	shift, and go to state 110
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+
+	$default	reduce using rule 96 (binary)
+
+State 162:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary '**' binary .	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+
+	'**'	shift, and go to state 117
+
+	$default	reduce using rule 103 (binary)
+
+State 163:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary '+' binary .	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+
+	'%'	shift, and go to state 110
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'/'	shift, and go to state 121
+
+	$default	reduce using rule 90 (binary)
+
+State 164:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary '!=' binary .	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+
+	'%'	shift, and go to state 110
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+	'<'	shift, and go to state 109
+	'<='	shift, and go to state 115
+	'>'	shift, and go to state 116
+	'>='	shift, and go to state 112
+
+	$default	reduce using rule 101 (binary)
+
+State 165:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary '&' binary .	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+
+	'!='	shift, and go to state 119
+	'%'	shift, and go to state 110
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+	'<'	shift, and go to state 109
+	'<='	shift, and go to state 115
+	'=='	shift, and go to state 111
+	'>'	shift, and go to state 116
+	'>='	shift, and go to state 112
+
+	$default	reduce using rule 102 (binary)
+
+State 166:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary '/' binary .	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+
+	'**'	shift, and go to state 117
+
+	$default	reduce using rule 93 (binary)
+
+State 167:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary '=' binary .	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+
+	'!='	shift, and go to state 119
+	'%'	shift, and go to state 110
+	'&'	shift, and go to state 120
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+	'<'	shift, and go to state 109
+	'<='	shift, and go to state 115
+	'='	shift, and go to state 122
+	'=='	shift, and go to state 111
+	'>'	shift, and go to state 116
+	'>='	shift, and go to state 112
+	'|'	shift, and go to state 114
+
+	$default	reduce using rule 100 (binary)
+
+State 168:
+
+	Primary -> '(' expression ')' .	(Rule 83)
+
+	$default	reduce using rule 83 (Primary)
+
+State 169:
+
+	Primary -> '(' error ')' .	(Rule 84)
+
+	$default	reduce using rule 84 (Primary)
+
+State 170:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+	binary -> Variable '*=' binary .	(Rule 108)
+
+	'!='	shift, and go to state 119
+	'%'	shift, and go to state 110
+	'&'	shift, and go to state 120
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+	'<'	shift, and go to state 109
+	'<='	shift, and go to state 115
+	'='	shift, and go to state 122
+	'=='	shift, and go to state 111
+	'>'	shift, and go to state 116
+	'>='	shift, and go to state 112
+	'|'	shift, and go to state 114
+
+	$default	reduce using rule 108 (binary)
+
+State 171:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+	binary -> Variable '-=' binary .	(Rule 107)
+
+	'!='	shift, and go to state 119
+	'%'	shift, and go to state 110
+	'&'	shift, and go to state 120
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+	'<'	shift, and go to state 109
+	'<='	shift, and go to state 115
+	'='	shift, and go to state 122
+	'=='	shift, and go to state 111
+	'>'	shift, and go to state 116
+	'>='	shift, and go to state 112
+	'|'	shift, and go to state 114
+
+	$default	reduce using rule 107 (binary)
+
+State 172:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+	binary -> Variable '/=' binary .	(Rule 109)
+
+	'!='	shift, and go to state 119
+	'%'	shift, and go to state 110
+	'&'	shift, and go to state 120
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+	'<'	shift, and go to state 109
+	'<='	shift, and go to state 115
+	'='	shift, and go to state 122
+	'=='	shift, and go to state 111
+	'>'	shift, and go to state 116
+	'>='	shift, and go to state 112
+	'|'	shift, and go to state 114
+
+	$default	reduce using rule 109 (binary)
+
+State 173:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+	binary -> Variable '%=' binary .	(Rule 110)
+
+	'!='	shift, and go to state 119
+	'%'	shift, and go to state 110
+	'&'	shift, and go to state 120
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+	'<'	shift, and go to state 109
+	'<='	shift, and go to state 115
+	'='	shift, and go to state 122
+	'=='	shift, and go to state 111
+	'>'	shift, and go to state 116
+	'>='	shift, and go to state 112
+	'|'	shift, and go to state 114
+
+	$default	reduce using rule 110 (binary)
+
+State 174:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+	binary -> Variable '+=' binary .	(Rule 106)
+
+	'!='	shift, and go to state 119
+	'%'	shift, and go to state 110
+	'&'	shift, and go to state 120
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+	'<'	shift, and go to state 109
+	'<='	shift, and go to state 115
+	'='	shift, and go to state 122
+	'=='	shift, and go to state 111
+	'>'	shift, and go to state 116
+	'>='	shift, and go to state 112
+	'|'	shift, and go to state 114
+
+	$default	reduce using rule 106 (binary)
+
+State 175:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+	binary -> Variable '=' binary .	(Rule 105)
+
+	'!='	shift, and go to state 119
+	'%'	shift, and go to state 110
+	'&'	shift, and go to state 120
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+	'<'	shift, and go to state 109
+	'<='	shift, and go to state 115
+	'='	shift, and go to state 122
+	'=='	shift, and go to state 111
+	'>'	shift, and go to state 116
+	'>='	shift, and go to state 112
+	'|'	shift, and go to state 114
+
+	$default	reduce using rule 105 (binary)
+
+State 176:
+
+	accessList -> '[' binary . ']'	(Rule 76)
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+
+	'!='	shift, and go to state 119
+	'%'	shift, and go to state 110
+	'&'	shift, and go to state 120
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+	'<'	shift, and go to state 109
+	'<='	shift, and go to state 115
+	'='	shift, and go to state 122
+	'=='	shift, and go to state 111
+	'>'	shift, and go to state 116
+	'>='	shift, and go to state 112
+	']'	shift, and go to state 190
+	'|'	shift, and go to state 114
+
+State 177:
+
+	Primary -> ID '(' opArgList . ')'	(Rule 85)
+
+	')'	shift, and go to state 191
+
+State 178:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+	argList -> binary .	(Rule 113)
+
+	'!='	shift, and go to state 119
+	'%'	shift, and go to state 110
+	'&'	shift, and go to state 120
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+	'<'	shift, and go to state 109
+	'<='	shift, and go to state 115
+	'='	shift, and go to state 122
+	'=='	shift, and go to state 111
+	'>'	shift, and go to state 116
+	'>='	shift, and go to state 112
+	'|'	shift, and go to state 114
+
+	$default	reduce using rule 113 (argList)
+
+State 179:
+
+	argList -> error .	(Rule 115)
+
+	$default	reduce using rule 115 (argList)
+
+State 180:
+
+	opArgList -> argList .	(Rule 112)
+	argList -> argList . ',' binary	(Rule 114)
+	argList -> argList . error	(Rule 116)
+	argList -> argList . ',' error	(Rule 117)
+
+	','	shift, and go to state 192
+	error	shift, and go to state 193
+
+	')'	reduce using rule 112 (opArgList)
+
+State 181:
+
+	fieldaccess -> fieldaccess '.' . Vararray	(Rule 78)
+
+	ID	shift, and go to state 183
+
+	Vararray	go to state 194
+
+State 182:
+
+	fieldaccess -> '.' Vararray .	(Rule 79)
+
+	$default	reduce using rule 79 (fieldaccess)
+
+State 183:
+
+	Vararray -> ID .	(Rule 73)
+	Vararray -> ID . accessList	(Rule 74)
+
+	'['	shift, and go to state 135
+
+	$default	reduce using rule 73 (Vararray)
+
+	accessList	go to state 139
+
+State 184:
+
+	accessList -> accessList '[' . binary ']'	(Rule 77)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 195
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 185:
+
+	statement -> RETURN expression ';' .	(Rule 57)
+
+	$default	reduce using rule 57 (statement)
+
+State 186:
+
+	expression -> error ',' binary .	(Rule 68)
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+
+	'!='	shift, and go to state 119
+	'%'	shift, and go to state 110
+	'&'	shift, and go to state 120
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+	'<'	shift, and go to state 109
+	'<='	shift, and go to state 115
+	'='	shift, and go to state 122
+	'=='	shift, and go to state 111
+	'>'	shift, and go to state 116
+	'>='	shift, and go to state 112
+	'|'	shift, and go to state 114
+
+	$default	reduce using rule 68 (expression)
+
+State 187:
+
+	loopPrefix -> WHILE '(' expression . ')'	(Rule 64)
+	expression -> expression . ',' binary	(Rule 67)
+	expression -> expression . error	(Rule 69)
+	expression -> expression . ',' error	(Rule 70)
+
+	')'	shift, and go to state 196
+	','	shift, and go to state 104
+	error	shift, and go to state 105
+
+State 188:
+
+	statement -> ifPrefix statement 'ELSE' . statement	(Rule 60)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	';'	shift, and go to state 86
+	'{'	shift, and go to state 58
+	BREAK	shift, and go to state 69
+	CONTINUE	shift, and go to state 79
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	IF	shift, and go to state 72
+	LCONST	shift, and go to state 81
+	RETURN	shift, and go to state 91
+	WHILE	shift, and go to state 94
+	error	shift, and go to state 92
+
+	Unary	go to state 76
+	binary	go to state 77
+	Vararray	go to state 70
+	statement	go to state 197
+	Varstruct	go to state 90
+	ifPrefix	go to state 95
+	expression	go to state 73
+	Primary	go to state 74
+	loopPrefix	go to state 80
+	compStat	go to state 93
+	Variable	go to state 83
+
+State 189:
+
+	ifPrefix -> IF '(' expression ')' .	(Rule 62)
+
+	$default	reduce using rule 62 (ifPrefix)
+
+State 190:
+
+	accessList -> '[' binary ']' .	(Rule 76)
+
+	$default	reduce using rule 76 (accessList)
+
+State 191:
+
+	Primary -> ID '(' opArgList ')' .	(Rule 85)
+
+	$default	reduce using rule 85 (Primary)
+
+State 192:
+
+	argList -> argList ',' . binary	(Rule 114)
+	argList -> argList ',' . error	(Rule 117)
+
+	'('	shift, and go to state 78
+	'++'	shift, and go to state 89
+	'--'	shift, and go to state 75
+	ICONST	shift, and go to state 87
+	ID	shift, and go to state 85
+	LCONST	shift, and go to state 81
+	error	shift, and go to state 199
+
+	Varstruct	go to state 90
+	Unary	go to state 76
+	binary	go to state 198
+	Primary	go to state 74
+	Vararray	go to state 70
+	Variable	go to state 83
+
+State 193:
+
+	argList -> argList error .	(Rule 116)
+
+	$default	reduce using rule 116 (argList)
+
+State 194:
+
+	fieldaccess -> fieldaccess '.' Vararray .	(Rule 78)
+
+	$default	reduce using rule 78 (fieldaccess)
+
+State 195:
+
+	accessList -> accessList '[' binary . ']'	(Rule 77)
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+
+	'!='	shift, and go to state 119
+	'%'	shift, and go to state 110
+	'&'	shift, and go to state 120
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+	'<'	shift, and go to state 109
+	'<='	shift, and go to state 115
+	'='	shift, and go to state 122
+	'=='	shift, and go to state 111
+	'>'	shift, and go to state 116
+	'>='	shift, and go to state 112
+	']'	shift, and go to state 200
+	'|'	shift, and go to state 114
+
+State 196:
+
+	loopPrefix -> WHILE '(' expression ')' .	(Rule 64)
+
+	$default	reduce using rule 64 (loopPrefix)
+
+State 197:
+
+	statement -> ifPrefix statement 'ELSE' statement .	(Rule 60)
+
+	$default	reduce using rule 60 (statement)
+
+State 198:
+
+	binary -> binary . '+' binary	(Rule 90)
+	binary -> binary . '-' binary	(Rule 91)
+	binary -> binary . '*' binary	(Rule 92)
+	binary -> binary . '/' binary	(Rule 93)
+	binary -> binary . '%' binary	(Rule 94)
+	binary -> binary . '<' binary	(Rule 95)
+	binary -> binary . '>' binary	(Rule 96)
+	binary -> binary . '>=' binary	(Rule 97)
+	binary -> binary . '<=' binary	(Rule 98)
+	binary -> binary . '==' binary	(Rule 99)
+	binary -> binary . '=' binary	(Rule 100)
+	binary -> binary . '!=' binary	(Rule 101)
+	binary -> binary . '&' binary	(Rule 102)
+	binary -> binary . '**' binary	(Rule 103)
+	binary -> binary . '|' binary	(Rule 104)
+	argList -> argList ',' binary .	(Rule 114)
+
+	'!='	shift, and go to state 119
+	'%'	shift, and go to state 110
+	'&'	shift, and go to state 120
+	'*'	shift, and go to state 113
+	'**'	shift, and go to state 117
+	'+'	shift, and go to state 118
+	'-'	shift, and go to state 108
+	'/'	shift, and go to state 121
+	'<'	shift, and go to state 109
+	'<='	shift, and go to state 115
+	'='	shift, and go to state 122
+	'=='	shift, and go to state 111
+	'>'	shift, and go to state 116
+	'>='	shift, and go to state 112
+	'|'	shift, and go to state 114
+
+	$default	reduce using rule 114 (argList)
+
+State 199:
+
+	argList -> argList ',' error .	(Rule 117)
+
+	$default	reduce using rule 117 (argList)
+
+State 200:
+
+	accessList -> accessList '[' binary ']' .	(Rule 77)
+
+	$default	reduce using rule 77 (accessList)
+
+
+Summary:
+--------
+Number of rules         : 118
+Number of terminals     : 45
+Number of non-terminals : 38
+Number of states        : 201

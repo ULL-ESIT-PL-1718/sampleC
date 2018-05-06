@@ -1,0 +1,894 @@
+%{
+
+use IO::File;
+use Data::Dumper;
+use Carp;
+our $reserved = {
+	INT => "int", 
+	STRING => "string", 
+	IF => "if", 
+	ELSE => "else",
+	BREAK => "break",
+	CONTINUE => "continue",
+	PRINT => "print",
+	WHILE => "while", 
+	RETURN => "return"};
+	
+our $lexema = { 
+	'=' => "ASSIGN", 
+	'==' => "EQUAL", 
+	'!=' => "NOTEQUAL", 
+	'&' => "AND",
+	'|' => "OR", 
+	',' => "COMMA", 
+	'[' => "LEFTBRACKET", 
+	']' => "RIGHTBRACKET", 
+	'{' => "LEFTKEY", 
+	'}' => "RIGHTKEY",
+	'(' => "LEFTPARENTHESIS", 
+	')' => "RIGHTPARENTHESIS", 
+	'<=' => "LESSTHAN",
+	'<' => "LESS", 
+	'>' => "GREATER", 
+	'>=' => "GREATERTHAN", 
+	'+=' => "PLUSASSIGN",
+	'-=' => "MINUSASSIGN",
+	'*=' => "TIMESASSIGN",
+	'/=' => "DIVASSIGN",
+	'%=' => "MODASSIGN",
+	'+' => "PLUS", 
+	'-' => "MINUS", 
+	'*' => "TIMES", 
+	'/' => "DIV",
+	'%' => "MOD",
+	'**' => "EXP",
+	'++' => "INC",
+	'--' => "DEC", 
+	';' => "SEMICOLON"};
+	
+our $numlineas = 1;
+our $prueba = "";
+our $cadena ="";
+our $fhi;
+our $entrado;
+our $erro = 0;
+our $debug = 0;
+our @ST;
+our $numtablas = 0;
+our $symbol_table;
+our $borra = 0;
+our @localvar =();
+our @stscode =();
+our @paramcode =();
+our @concreteparam = ();
+our @labels = ();
+our $numlabel = 1;
+our $whilelabel = 1;
+our $scope=0;
+our $temp;
+$Data::Dumper::Indent = 1;
+$Data::Dumper::Deepcopy = 1;
+#======================================================================
+# Variables para la generacion de codigo
+#======================================================================
+our $header ="";				# Cabecera de funcion
+our $body ="";					# Cuerpo de la funcion
+our $code="";					# Codigo global
+our $ifcode="";					# Codigo if
+our $elsecode="";				# Codigo else
+our @labelstack = ();				# Pila de etiquetas
+our %globalvars;				# Hash de globales
+our $count = 1;
+our $int_reg = 1;				# inicio de los I
+our $str_reg = 1;				# inicio de los S
+#======================================================================
+# Comprueba que un identificador este o no declarado
+#======================================================================
+
+sub check_declared {
+  my $id = shift;
+  my($existe,$type,$tabla) = existe($id);
+  if ($existe == 0) {
+    die("$id no ha sido declarado\n");
+  }
+  return ($type,$tabla);
+}
+
+
+#======================================================================
+# Subrutina que crea una entrada en la tabla de simbolos para
+# cada identificador en @vars con tipo $type
+#======================================================================
+
+sub set_types {
+  my $type = shift;
+  my @vars = @_;
+
+	
+  foreach my $var (@vars) {
+    if (!exists($symbol_table->{$var->{VAL}})) { $symbol_table->{$var->{VAL}}->{TYPE} = $type; }
+    else { die("$var->{VAL} se ha declarado dos veces en el mismo ambito\n"); }
+  }
+}
+
+
+sub set_subtypes {
+  my ($type,$sub) = @_;
+
+  if (!exists($symbol_table->{$sub->{ID}->{VAL}})) { 
+	$symbol_table->{$sub->{ID}->{VAL}}->{TYPE} = $type;
+  	if (exists($sub->{PARAMETERS})) {
+		$symbol_table->{$sub->{ID}->{VAL}}->{PARAMETERS} = $sub->{PARAMETERS};
+	}
+  }
+  else {die("$sub->{ID}->{VAL} se ha declarado dos veces en el mismo ambito\n");}	
+		
+}
+
+#======================================================================
+# Subrutina que crea una nueva tabla de simbolos, y la establece
+# como predefinida
+#======================================================================
+
+sub new_block {
+  my %tabla;
+  push @ST,\%tabla;
+  $numtablas = @ST;
+  $symbol_table = $ST[$numtablas - 1];
+  #return $numtablas;
+}
+
+#======================================================================
+# Subrutina que elimina la ultima tabla de simbolos, y establece
+# como predefinida la tabla anterior
+#======================================================================
+
+sub delete_block {
+  pop @ST;
+	if ($borra == 1) {
+		pop @ST;
+	}
+  $numtablas = @ST;
+  $symbol_table = $ST[$numtablas - 1];
+	$borra = 0;
+  return $numtablas;
+}
+
+
+#======================================================================
+# Subrutina que comprueba que un identificador ha sido declarado
+# en este ambito o en uno de los anteriores
+#======================================================================
+
+sub existe {
+        my $id = shift;
+        my @TS;
+        my $tabla;
+        while (0 < @ST) {
+                if (!exists($symbol_table->{$id})) {
+                        if ($numtablas > 1) {
+                                push @TS,pop @ST;
+                                $numtablas = @ST;
+                                $symbol_table = $ST[$numtablas - 1];
+                        }
+                        else {
+                                while (0 < @TS) {
+                                        push @ST,pop @TS;
+                                }
+                                $numtablas = @ST;
+                                $symbol_table = $ST[$numtablas - 1];
+                                return 0;
+                        }
+                }
+                else {
+                        my $type = $symbol_table->{$id}->{TYPE};
+                        $tabla = $symbol_table;
+                        while (0 < @TS) {
+                                push @ST,pop @TS;
+                        }
+                        $numtablas = @ST;
+                        $symbol_table = $ST[$numtablas - 1];
+                        return (1,$type,$tabla);
+                }
+        }
+}
+
+sub global {
+	my $var = shift;
+	my $length = @ST;
+	my @temporal = @ST;
+	my $tab;
+	while (0 < @temporal) {
+		$tab = pop @temporal;
+		if ((exists($tab->{$var})) & (@temporal == 0)) {
+			return $globalvars{$var};
+		}
+    elsif (exists($tab->{$var})) {
+      return $var;
+    }
+	}
+	return $var;
+}
+#======================================================================
+# Subrutina que vuelca el codigo de un conjunto de statement y enlaza
+# el codigo de todos ellos en un string y lo devuelve
+#======================================================================
+sub stscode {
+	my $body = "";
+	my $num = @stscode;
+	if ($num > 0) {
+	foreach my $cod (@stscode) {
+		$body = $cod . "\n" . $body;
+	}
+	}
+	@stscode = ();
+	return $body;
+}
+
+#======================================================================
+# Subrutina que vuelca el codigo de un conjunto de variables y enlaza
+# el codigo de todos ellos en un string y lo devuelve
+#======================================================================
+sub datadefcode {
+	my $data = "";
+	foreach my $code (@localvar) {
+		$data .= ".local " . $code->{SYMTABLE}->{$code->{VAL}}->{TYPE}->{TYPE} . " " . $code->{VAL} . "\n";
+	}
+	#$data = ".local " . $data . "\n" if $data;
+	@localvar = ();
+	return $data;
+}
+
+#======================================================================
+# Subrutina que vuelca el codigo de un conjunto de parametros y enlaza
+# el codigo de todos ellos en un string y lo devuelve
+#======================================================================
+sub paramcode {
+	my $param = "";
+	foreach my $tipo (@paramcode) {
+		$param .= " .param $tipo->[0] $tipo->[1]\n";
+	}
+	@paramcode = ();
+	return $param;
+}
+
+
+#======================================================================
+# Subrutina que vuelca el codigo de un conjunto de parametros y enlaza
+# el codigo de todos ellos en un string y lo devuelve
+#======================================================================
+sub concreteparamcode {
+	my $param = "";
+	my $val = 0;
+	foreach my $tipo (@concreteparam) {
+		if ($val != 0) {
+			$param .= ",";
+		}
+		$param .= " $tipo";
+		$val++;
+	}
+	@concreteparam = ();
+	return $param;
+}
+
+#======================================================================
+#
+#======================================================================
+sub createlabel {
+	my $label = shift;
+	my $number = shift;
+	return $label . $number;
+}
+#======================================================================
+#
+#======================================================================
+sub code_rama {
+	my ($code,$tmp) = @_;
+	if ($code =~ m/(\$\w+)\s*=[^=]*$/) {
+		return ($code,$1);
+	}
+	my $return = $tmp . " = " . $code;
+	return ($return,$tmp);
+}
+
+#======================================================================
+#
+#======================================================================
+sub exp_code {
+	my ($left_struct,$right_struct,$symbol) = @_;
+	my $code = "";
+	my $temp = "";
+	my $val = 0;
+	my $val2 = 0;
+	if ($left_struct->{TYPE} eq "OP") {
+		($code,$temp) = code_rama($left_struct->{CODE},"\$tm");
+		$val2 = 1;
+	}
+	else {
+		$code .= "$left_struct->{CODE} ";
+	}
+	if ($val2 == 1) {
+		$code .= "\$t$count = $temp ";
+		$val2 = 0;
+	}
+	$code .= $symbol;
+	if ($right_struct->{TYPE} eq "OP") {
+		($code,$temp) = code_rama($right_struct->{CODE},"\$tmp");
+		$val = 1;
+	}
+	else {
+		$code .= " $right_struct->{CODE}\n";
+	}
+	if ($val == 1) {
+		$code .= "$temp\n";
+		$val = 0;
+	}
+	$count++;
+	return $code;
+}
+
+#======================================================================
+#
+#======================================================================
+sub create_exp {
+	my ($lvalue,$exp,$op) = @_;
+	if (!exists($exp->{RIGHT})) {
+		return "$lvalue $op $exp->{CODE}\n";	
+	}
+	my $left_struct = $exp->{LEFT};
+	my $right_struct = $exp->{RIGHT};
+	my $symbol = $exp->{OP};
+	my $code = "";
+	my $code2 = "";
+	my $val = 0;
+	my $val2 = 0;
+	my $temp = "";
+	my $temp2 = "";
+	if ($right_struct->{TYPE} eq "OP") {
+		($code2,$temp2) = code_rama($right_struct->{CODE},"\$tmp");
+		$val = 1;
+	}
+	if ($left_struct->{TYPE} eq "OP") {
+		($code,$temp) = code_rama($left_struct->{CODE},"\$tm");
+		$val2 = 1;
+	}
+	$code = $code . $code2;
+	$code .= "$lvalue $op ";
+	if ($val2 == 1) {
+		$code .= "$temp ";
+		$val2 = 0;
+	}
+	if ($left_struct->{TYPE} eq "VAL") {
+		$code .= $left_struct->{CODE};
+	}
+	$code .= $symbol;
+	if ($right_struct->{TYPE} eq "VAL") {
+		$code .= $right_struct->{CODE};
+	}
+	if ($val == 1) {
+		$code .= "$temp2\n";
+		$val = 0;
+	}
+	$count = 1;
+	return $code;
+}
+#=========================================================================
+#
+#=========================================================================
+sub check_params {
+	my @args = @_;
+	my @actuales = @{$args[1]};
+	my ($type,$table) = &check_declared($args[0]);	
+	my @globales = @{$table->{$args[0]}->{PARAMETERS}};
+	my $globales = @globales;
+	my %table_actual = %{$globales[0]{DECLARATOR}{VAL}{SYMTABLE}};
+	my $param_size = @{$args[1]};
+	my $tam = @args;
+	if ($param_size != $globales) {
+		die "Discordancia de parametros\n";
+	}
+	if (defined(@{$table->{$args[0]}->{PARAMETERS}})) {
+		if ($tam == 1) {
+			die "No concuerda la cabecera de la funcion en la linea $numlineas\n";
+		}
+		else {
+			my $i = 0;
+			my $glob_actual;
+			foreach my $y (@actuales) {
+				$glob_actual = $globales[$i]{DECLARATOR}{VAL}{VAL};
+				if ($y->{P_TYPE}->{TYPE} ne $table_actual{$glob_actual}{TYPE}{TYPE}) {
+					print "error\n";
+				}
+				$i++;
+			}
+		}
+		
+	}
+}
+
+#================================================================================
+#
+#================================================================================
+sub globalvars {
+	my $defs = shift;
+	my @lista = @{$defs->{DECLARATORLIST}};
+	my $length = @lista;
+	my %lista = %{$lista[0]{SYMTABLE}};
+	#print Dumper (@lista);
+	#print "$length\n";
+	foreach my $elem (@lista) {
+		if ($lista{$elem->{VAL}}->{TYPE}->{TYPE} eq "int") {
+			$globalvars{$elem->{VAL}} = "I$int_reg";
+			$int_reg++;
+		}
+		else {
+			$globalvars{$elem->{VAL}} = "S$str_reg";
+			$str_reg++;
+		}
+	}
+}
+
+
+%}
+
+%nonassoc '(' '['
+%right '=' '+=' '-=' '*=' '/=' '%='
+%left '&' 
+%left '|'
+%left '==' '!='
+%left '<' '>' '>=' '<='
+%left '-' '+'
+%left '*' '/' '%'
+%right '**'
+%right '++' '--'
+%right 'ELSE'
+%%
+
+dibujar:	
+		program					{
+							   if (($erro == 0) && ($debug == 1)) {
+							      print Dumper($_[1]);
+							   }
+							}
+;
+
+program :	
+		definitions				{bless [$_[1]],'program'}
+	|	definitions program			{push @{$_[2]}, $_[1]; $_[2]}
+;
+
+definitions: 	
+		datadefinition				{  globalvars($_[1]);
+							   bless {DATADEFINITION => $_[1]},'definitions'
+							}
+	|    	functiondefinition			{
+							   print $_[1]->{CODE}; 
+	               					   bless {FUNCTIONDEFINITION => $_[1]}, 'definitions'
+							}
+;
+
+datadefinition:	
+		basictype  declaratorlist ';'		{
+							   &set_types($_[1],@{$_[2]});
+						 	   if ($scope > 0) {
+							   	@localvar = @{$_[2]};
+							}
+							   bless {TYPE => $_[1],DECLARATORLIST => $_[2]},'datadefinition'
+							}
+	|	error ';'				{$_[0]->YYErrok ; print "Me he recuperado del error\n"}
+;
+
+declaratorlist:	
+		declarator				{bless [$_[1]->{VAL}],'declaratorlist'}
+	|	declarator ',' declaratorlist		{push @{$_[3]}, $_[1]->{VAL}; $_[3]}
+;
+
+declarator:	
+		'ID' constantexplist			{
+							   $_[1]->{SYMTABLE} = $symbol_table;
+							   bless {VAL => $_[1], CONSTANTEXPLIST => $_[2]}, 'declarator'
+							} 
+;
+
+constantexplist:
+		/* empty */				{bless [],'constantexplist'}
+	|	'[' constantexp ']' constantexplist 	{push @{$_[4]}, $_[2]; $_[4]}
+;
+
+functiondefinition:
+		basictype functionheader functionbody	{  
+							   $_[2]->{ID}->{SYMTABLE} = $symbol_table;
+							   my $return = bless {TYPE => $_[1], HEADER => $_[2], BODY => $_[4],
+							          CODE => "$_[2]->{CODE} $_[3]->{CODE}.end\n"}, 
+							   'functiondefinition';
+							   &set_subtypes($_[1],$_[2]);
+							   $return
+							   
+							}
+	|	functionheader functionbody		{
+							   $_[1]->{ID}->{SYMTABLE} = $symbol_table;
+							   my $return = bless {HEADER => $_[1], BODY => $_[2],
+							          CODE => "$_[1]->{CODE} $_[2]->{CODE}.end\n"}, 
+						    	   'functiondefinition';
+							   &set_subtypes('void',$_[1]);
+							   $return
+							}
+;
+
+basictype:	
+		'INT'					{bless {TYPE => 'int'},'basictype'}
+	|	'STRING'				{bless {TYPE => 'string'},'basictype'}
+;
+
+functionheader:	
+		'ID' '(' ')'				{
+							   my $ambito = "";
+							   if ($_[1]->{VAL} eq "main") {
+							   	$ambito = ":main";
+							   }
+							   $header =".sub $_[1]->{VAL} $ambito\n";
+							   bless {ID => $_[1], CODE =>"$header"},
+							   'functionheader' 
+							}
+	|	'ID' '(' 				{
+							   $header .=".sub $_[1]->{VAL}\n";
+							   $borra = 1; &new_block
+							} 
+		parameters')'				{
+							   my $ambito = "";
+							   if ($_[1]->{VAL} eq "main ") {
+							   	$ambito = ":main";
+							   }
+							   bless {ID => $_[1], PARAMETERS => $_[4],
+							   CODE => ".sub $_[1]->{VAL} $ambito\n" . paramcode()
+							}, 'functionheader'}
+;
+
+parameters:
+		basictype declarator			{
+							   push @paramcode,[$_[1]->{TYPE},$_[2]->{VAL}->{VAL}];
+							   &set_types($_[1],$_[2]->{VAL});
+							   bless [{TYPE => $_[1], DECLARATOR => $_[2]}], 'parameters'
+							}
+	|	basictype declarator ',' parameters  	{
+							   push @paramcode,[$_[1]->{TYPE},$_[2]->{VAL}->{VAL}];
+							   &set_types($_[1],$_[2]->{VAL});
+							   push @{$_[4]}, {TYPE => $_[1], DECLARATOR => $_[2]}; 
+							   $_[4]
+							}
+;
+
+functionbody:
+		'{'					{
+							   $scope++; 
+							}
+		datadefs 				
+		sts '}'					{
+							   my $codsts = "";
+							   if ($scope == 1) {
+							   	$codsts = datadefcode() . stscode();
+							   }
+							   else { $codsts = stscode(); }
+							   $scope --;
+							   bless {DATADEFS => $_[3], STS => $_[5],
+							   	  CODE => $codsts }, 
+						           'functionbody'
+							}
+;
+
+datadefs:
+		/* empty */				{bless [],'datadefs'}
+	|	datadefinition datadefs			{push @{$_[2]},$_[1]; $_[2]}
+;
+
+sts:
+		/* empty */				{bless [], 'sts'}
+	|	statement sts				{push @stscode,$_[1]->{CODE};push @{$_[2]},$_[1]; $_[2]}
+;
+
+statement:
+		';'					{;}	
+	|	exp ';'						
+	| 	error	
+	|	functionbody
+	|	'PRINT' exp				{
+							   bless {VAL => $_[2], CODE => "print $_[2]->{CODE}"}, 'PRINT'
+							}
+	|	'IF'					 
+		'(' exp ')' statement %prec '+'		{
+							   $numlabel++;
+							   $temp = createlabel("if",$numlabel);
+							   bless {EXP => $_[3], STATEMENT => $_[5],
+							   	  CODE => "if not $_[3]->{CODE} goto "
+								  . $temp . "\n$_[5]->{CODE}\n ."
+								  . $temp . ":\n" }, 'IF'
+
+							}
+	|	'IF'			 
+		'(' exp ')' 			
+		statement 
+		'ELSE' statement 			{
+							   $numlabel++;
+							   $temp = createlabel("if",$numlabel);
+							   my $tmp = createlabel("continue",$numlabel);
+							   bless {EXP => $_[3], STATEMENT => $_[5], ELSE => $_[7],
+								CODE =>"if $_[3]->{CODE} goto "
+								. $temp ."\n$_[7]->{CODE}\n"
+								. "goto $tmp\n$temp:\n"
+								. "$_[5]->{CODE}\n$tmp:\n"}, 
+							   'IF'
+							}
+	|	'WHILE' '(' exp ')' statement		{
+							   $whilelabel++;
+							   bless {EXP => $_[3], STATEMENT => $_[5],
+							          CODE => "goto "
+								  . createlabel("while",$whilelabel)
+								  . "\n" . createlabel("cont",$whilelabel) . ":\n"
+								  . "$_[5]->{CODE}"
+								  . createlabel("while",$whilelabel)
+								  . ":\n if $_[3]->{CODE} goto "
+								  . createlabel("cont",$whilelabel) . "\n"}, 
+							   'WHILE'
+							}
+	|	'RETURN' ';'				{bless {CODE => "return"}, 'RETURN'}
+	|	'RETURN' exp ';'			{
+							   bless {EXP => $_[2], CODE => "return ($_[2]->{CODE})"}, 
+							   'RETURN'
+							}
+;
+
+constantexp:
+		exp
+;
+
+exp:
+		lvalue '=' exp				{ 
+							   bless {LEFT => $_[1], RIGHT => $_[3],
+							          CODE => create_exp($_[1]->{CODE},$_[3],"=")},
+							   'ASSIGN'
+							}
+	|	lvalue '+=' exp				{ 
+							   bless {LEFT => $_[1], RIGHT => $_[3],
+							          CODE => create_exp($_[1]->{CODE},$_[3],"+=")},
+						  	   'PLUSASSIGN'
+							}
+	|	lvalue '-=' exp				{ 
+							   bless {LEFT => $_[1], RIGHT => $_[3],
+							          CODE => create_exp($_[1]->{CODE},$_[3],"-=")},
+							   'MINUSASSIGN'
+							}
+	|	lvalue '*=' exp				{ 
+							   bless {LEFT => $_[1], RIGHT => $_[3],
+							          CODE => create_exp($_[1]->{CODE},$_[3],"*=")},
+							   'TIMESASSIGN'
+							}
+	|	lvalue '/=' exp				{ 
+							   bless {LEFT => $_[1], RIGHT => $_[3],
+							          CODE => create_exp($_[1]->{CODE},$_[3],"/=")},
+						           'DIVASSIGN'
+							}
+	|	lvalue '%=' exp				{ 
+							   bless {LEFT => $_[1], RIGHT => $_[3],
+							          CODE => create_exp($_[1]->{CODE},$_[3],"%=")},
+							   'MODASSIGN'
+							}
+	|	exp '&' exp				{ 
+							   bless { TYPE => "OP", LEFT => $_[1], RIGHT => $_[3],
+							   	  CODE => exp_code($_[1],$_[3],"&"),
+								  OP => "&"}, 
+							   'AND'
+							}
+	|	exp '|' exp				{ 
+							   bless { TYPE => "OP", LEFT => $_[1], RIGHT => $_[3],
+							          CODE => exp_code($_[1],$_[3],"|"),
+								  OP => "|"}, 
+							   'OR'
+							}
+	|	exp '==' exp				{ 
+							   bless { TYPE => "OP", LEFT => $_[1], RIGHT => $_[3],
+							          CODE => exp_code($_[1],$_[3],"=="),
+								  OP => "=="}, 
+							   'EQUAL'
+							}
+	|	exp '!=' exp				{ 
+							   bless { TYPE => "OP", LEFT => $_[1], RIGHT => $_[3],
+							          CODE => exp_code($_[1],$_[3],"!="),
+								  OP => "!="}, 
+							   'NOTEQUAL'
+							}
+	|	exp '<' exp				{ 
+							   bless { TYPE => "OP", LEFT => $_[1], RIGHT => $_[3],
+							          CODE => exp_code($_[1],$_[3],"<"),
+								  OP => "<"}, 
+						    	   'LESS'
+							}
+	|	exp '>' exp				{ 
+							   bless { TYPE => "OP", LEFT => $_[1], RIGHT => $_[3],
+							          CODE => exp_code($_[1],$_[3],"<"),
+								  OP => ">"}, 
+							   'GREATER'
+							}
+	|	exp '<=' exp				{ 
+							   bless { TYPE => "OP", LEFT => $_[1], RIGHT => $_[3],
+							          CODE => exp_code($_[1],$_[3],"<="),
+								  OP => "<="}, 
+							   'LESSTHAN'
+							}
+	|	exp '>=' exp				{ 
+							   bless { TYPE => "OP", LEFT => $_[1], RIGHT => $_[3],
+							          CODE => exp_code($_[1],$_[3],">="),
+								  OP => ">="}, 
+							   'GREATERTHAN'
+							}
+	|	exp '+' exp				{ 
+							   bless { TYPE => "OP", LEFT => $_[1], RIGHT => $_[3],
+							          CODE => exp_code($_[1],$_[3],"+"),
+								  OP => "+"}, 
+							   'PLUS'
+							}
+	|	exp '-' exp				{ 
+							   bless { TYPE => "OP", LEFT => $_[1], RIGHT => $_[3],
+							          CODE => exp_code($_[1],$_[3],"-"),
+								  OP => "-"}, 
+							   'MINUS'
+							}
+	|	exp '*' exp				{ 
+							   bless { TYPE => "OP", LEFT => $_[1], RIGHT => $_[3],
+							          CODE => exp_code($_[1],$_[3],"*"),
+								  OP => "*"}, 
+							   'MULT'} 
+	|	exp '/' exp				{ 
+							   bless { TYPE => "OP", LEFT => $_[1], RIGHT => $_[3],
+							          CODE => exp_code($_[1],$_[3],"/"),
+								  OP => "/"}, 
+							   'DIV'
+							}
+	|	exp '%' exp				{ 
+							   bless { TYPE => "OP", LEFT => $_[1], RIGHT => $_[3],
+							          CODE => exp_code($_[1],$_[3],"%"),
+								  OP => "%"}, 
+							   'MOD'
+							}
+	|	exp '**' exp				{ 
+							   bless { TYPE => "OP", LEFT => $_[1], RIGHT => $_[3],
+							          CODE => exp_code($_[1],$_[3],"**"),
+								  OP => "**"}, 
+							   'EXP'
+							}
+	| 	unary					{ $_[1] }
+;
+
+unary:
+		'++' lvalue				{ bless { TYPE=> "OP", VAL => $_[2], CODE => "inc $_[2]->{CODE}"}, 'INC'}
+	|	'--' lvalue				{ bless {VAL => $_[2], CODE => "dec $_[2]->{CODE}"}, 'DEC'}
+	| 	primary					{ $_[1] }
+;
+
+primary:
+		'(' exp ')'				{$_[2]}
+	|	'ID' '(' ')'				{
+							   &check_declared($_[1]->{VAL});
+							   &check_params($_[1]->{VAL});
+							   bless { 
+							      TYPE => "VAL", ID => $_[1], CODE => "$_[1]->{VAL} ()"
+							   }, 'primary'
+							}
+	|	'ID' '(' argumentlist ')' 		{
+							   &check_declared($_[1]->{VAL});
+							   &check_params($_[1]->{VAL},$_[3]);
+							   print "He pasado por aqui\n";
+							   bless {
+							      TYPE => "VAL",
+							      ID => $_[1], ARGUMENTS => $_[3],
+							      CODE => "$_[1]->{VAL} (" . concreteparamcode() . " )"
+							   }, 'primary'
+							}
+	|	lvalue				
+	|	'NUM'					{ bless { TYPE => "VAL", CODE => "$_[1]->{VAL}"},'primary' }
+	|	'STR'					{ bless { TYPE => "VAL", CODE => "\"$_[1]->{VAL}\""},'primary' }
+;
+
+lvalue:	
+		'ID' explist				{
+							   my ($type,$table) = &check_declared($_[1]->{VAL});
+							   my $generated = $_[1]->{VAL};
+							   $generated = global($generated);
+							   bless {
+							      TYPE => "VAL", ID => $_[1],
+							      P_TYPE => $type,
+							      LIST => $_[2], CODE => $generated
+							   }, 'lvalue'
+							}
+;
+
+explist:
+		/* empty */				{bless [],'explist'}
+	|	'[' exp ']' explist			{push @{$_[4]},$_[2];$_[4]}
+;
+
+argumentlist:
+		exp	                 		{push @concreteparam,$_[1]->{CODE};bless [$_[1]], 'argumentlist'}
+	|   exp ',' argumentlist			{push @{$_[3]}, $_[1]; push @concreteparam,$_[1]->{CODE};$_[3]}
+;
+
+%%	
+
+sub _Error {
+         exists $_[0]->YYData->{ERRMSG}
+     and do {
+         print $_[0]->YYData->{ERRMSG};
+         delete $_[0]->YYData->{ERRMSG};
+         return;
+     };
+		 $erro = 1;
+     print "Syntax error en la linea $numlineas\n";
+ }
+
+sub _Lexer {
+     my ($parser)=shift;
+		 if ($entrado == 0) {
+				if ($cadena and (-r $cadena)) {
+    			$fhi = IO::File->new("< $cadena");
+  			}
+  			else { $fhi = 'STDIN'; }
+				new_block;
+				$entrado = 1;
+		 }
+		 local $/ = undef;
+         $parser->YYData->{INPUT}
+     or  $parser->YYData->{INPUT} = <$fhi>
+     or  return('',undef);
+	
+     $parser->YYData->{INPUT}=~s/^[ \t]+//;
+
+
+		 my $cnt;	
+		 for ($parser->YYData->{INPUT}) {
+				 s/^(\n)+// 
+						and $cnt = $& =~ tr/\n/\n/
+						and $numlineas += $cnt;
+    		
+				 s/^[ \t]+//;
+
+		 		 s/^(\/\*.*?\*\/)//s
+						and $cnt = $& =~ tr/\n/\n/
+						and $numlineas += $cnt;
+			
+				 s/^(\n)+//
+						and $cnt = $& =~ tr/\n/\n/
+						and $numlineas += $cnt;
+
+				 s/(^[ \t]+)?//;
+
+				 s/^([0-9]+(?:\.[0-9]+)?)//
+            					and return('NUM',(bless{VAL => $1, LINEA => $numlineas},'NUM'));
+         
+				 s/^([A-Za-z][A-Za-z0-9_]*)//
+				    		and (defined $reserved->{uc($1)})? 
+						return (uc($1),(bless{VAL => $1, LINEA => $numlineas},uc($1))):
+            					return ('ID',(bless{VAL => $1, LINEA => $numlineas},'ID'));
+			
+				 s/^(\'[A-Za-z]\')//
+						and return ('CHARACTER',(bless{VAL => $1, LINEA => $numlineas},'STR'));
+	
+				 s/^(==|\!=|\+=|\+\+|\-\-|&&|\|\||<=|>=)//s
+						and return ($1,(bless{NOMBRE =>$lexema->{$1}, LINEA => $numlineas},'PUNT'));
+		
+				 s/^(=|\(|\)|\[|\]|\{|\}|\+|-|\*\*|\*|\/|,|;|<|>)//s
+						and ($1 eq '{')? &new_block : print ""
+						and ($1 eq '}')? &delete_block : print""
+						and return ($1,(bless{NOMBRE =>$lexema->{$1}, LINEA => $numlineas},'PUNT'));
+     }
+ }
+
+
+sub Run {
+     my($self)=shift;
+     ($cadena) = @_;
+     $entrado = 0;
+     $debug = 0;
+     $self->YYParse( yylex => \&_Lexer, yyerror => \&_Error) #, yydebug => 0x10 );
+     &delete_block;
+ }
+
+

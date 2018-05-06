@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="594"
+   name=""
+   committed-date="2007-02-17T11:39:35.722085Z"
+   url="svn+ssh://casiano@orion.pcg.ull.es/var/svn/casiano/PL/SampleC/trunk/SampleC/lib/Grammar"
+   last-author="alu2791"
+   kind="dir"
+   uuid="52f1fd00-fe1f-0410-bd44-ab427a4cd3c5"
+   revision="594"/>
+<entry
+   committed-rev="1336"
+   name="small.yp"
+   text-time="2007-07-03T16:02:05.000000Z"
+   committed-date="2007-07-03T16:05:05.804416Z"
+   checksum="8f2faa4aaf7ec21baa83e38b84ad86f5"
+   last-author="casiano"
+   kind="file"
+   prop-time="2007-02-17T11:42:08.000000Z"
+   revision="1336"/>
+<entry
+   committed-rev="532"
+   name="SC.yp"
+   text-time="2007-07-03T15:59:28.000000Z"
+   committed-date="2007-01-25T13:33:16.094784Z"
+   checksum="c69e11d12438168a14c5d5f2f3e794ff"
+   last-author="alu2791"
+   kind="file"
+   prop-time="2007-01-26T10:24:50.000000Z"/>
+<entry
+   committed-rev="594"
+   name="client"
+   text-time="2007-07-03T15:59:28.000000Z"
+   committed-date="2007-02-17T11:39:35.722085Z"
+   checksum="4c66bbfda75bf3d213d0863016ab078f"
+   last-author="alu2791"
+   kind="file"
+   prop-time="2007-02-17T11:42:08.000000Z"/>
+</wc-entries>

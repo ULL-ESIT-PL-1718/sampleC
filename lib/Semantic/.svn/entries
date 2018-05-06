@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="592"
+   name=""
+   committed-date="2007-02-17T11:36:37.558042Z"
+   url="svn+ssh://casiano@orion.pcg.ull.es/var/svn/casiano/PL/SampleC/trunk/SampleC/lib/Semantic"
+   last-author="alu2791"
+   kind="dir"
+   uuid="52f1fd00-fe1f-0410-bd44-ab427a4cd3c5"
+   revision="594"/>
+<entry
+   committed-rev="592"
+   name="Analysis.pm"
+   text-time="2007-07-03T15:59:28.000000Z"
+   committed-date="2007-02-17T11:36:37.558042Z"
+   checksum="c4f977b05aaab895b74329833cf0321d"
+   last-author="alu2791"
+   kind="file"
+   prop-time="2007-02-17T11:42:07.000000Z"/>
+</wc-entries>
